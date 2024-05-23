@@ -3,7 +3,7 @@
 
   <button class="animate-wiggle">¡Mírame moverme!</button>
 
-  <button class="animate-jump-in animate-delay-300 animate-once">
+  <button class="animate-jump-in animate-delay-600 animate-once">
     Espera un poco, luego entra saltando.
   </button>
 </template>
