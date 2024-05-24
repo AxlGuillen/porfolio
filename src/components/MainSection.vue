@@ -15,36 +15,41 @@
 
 <script setup>
 import { onMounted, ref } from "vue";
+import { useI18n } from "vue-i18n";
 
+const { t } = useI18n();
 const helloElement = ref(null);
 const worldElement = ref(null);
-const helloText = "Hello ";
-const worldText = "world";
+
 let i = 0,
   j = 0;
 
-function typeWriterHello() {
-  if (i < helloText.length) {
-    helloElement.value.innerHTML += helloText.charAt(i);
-    i++;
-    setTimeout(typeWriterHello, 150); // Ajusta la velocidad de escritura aquí
-  } else {
-    typeWriterWorld(); // Comienza a escribir "world" una vez que "Hello " esté completo
-  }
-}
-
-function typeWriterWorld() {
-  if (j < worldText.length) {
-    worldElement.value.innerHTML += worldText.charAt(j);
-    j++;
-    setTimeout(typeWriterWorld, 150); // Ajusta la velocidad de escritura aquí
-  }
-}
-
 onMounted(() => {
+  const helloText = t("message.hello1");
+  const worldText = t("message.hello2");
+
+  function typeWriterHello() {
+    if (i < helloText.length) {
+      helloElement.value.innerHTML += helloText.charAt(i);
+      i++;
+      setTimeout(typeWriterHello, 150);
+    } else {
+      typeWriterWorld();
+    }
+  }
+
+  function typeWriterWorld() {
+    if (j < worldText.length) {
+      worldElement.value.innerHTML += worldText.charAt(j);
+      j++;
+      setTimeout(typeWriterWorld, 150);
+    }
+  }
+
   typeWriterHello();
 });
 </script>
+
 
 
 <style>
