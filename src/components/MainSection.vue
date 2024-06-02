@@ -9,6 +9,13 @@
   <button class="animate-jump-in animate-delay-600 animate-once">
     Espera un poco, luego entra saltando.
   </button>
+
+  <DotLottieVue
+    style="height: 500px; width: 500px"
+    autoplay
+    loop
+    src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json"
+  />
 </template>
 
 
