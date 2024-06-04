@@ -10,6 +10,12 @@
     Espera un poco, luego entra saltando.
   </button>
 
+  <div class="wrapper">
+    <svg>
+      <text x="50%" y="50%" dy=".35em" text-anchor="middle">Experiencia</text>
+    </svg>
+  </div>
+
   <DotLottieVue
     style="height: 500px; width: 500px"
     autoplay
@@ -69,5 +75,45 @@ onMounted(() => {
 .cursor {
   font-weight: bold;
   animation: blink 1s step-end infinite;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+svg text {
+  animation: stroke 3s infinite alternate;
+  stroke-width: 3;
+  stroke: #ffffff;
+  font-size: 55px;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(204, 204, 204, 0);
+    stroke: rgba(255, 255, 255, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(204, 204, 204, 0);
+    stroke: rgba(255, 255, 255, 1);
+  }
+  80% {
+    fill: rgba(204, 204, 204, 0);
+    stroke: rgba(255, 255, 255, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgba(204, 204, 204, 1);
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+.wrapper {
+  background-color: #000000;
 }
 </style>
