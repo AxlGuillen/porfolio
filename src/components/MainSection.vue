@@ -41,8 +41,15 @@
         </a>
       </div>
     </div>
-    <div class="md:basis-1/2 lg:basis-1/3">
-      <img src="/src/assets/yo.jpg" alt="Yo mero" />
+    <div class="relative md:basis-1/2 lg:basis-1/3">
+      <div
+        class="absolute inset-0 border-4 border-blue-600 rounded-3xl transform translate-x-5 translate-y-5"
+      ></div>
+      <img
+        class="relative z-10 rounded-3xl border-4"
+        src="/src/assets/yo.jpg"
+        alt="Yo mero"
+      />
     </div>
   </div>
 
