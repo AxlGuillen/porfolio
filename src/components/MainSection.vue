@@ -1,27 +1,65 @@
 <template>
-  <h1 class="text-4xl font-bold">
-    <span ref="helloElement" class="text-neutral-800"></span>
-    <span ref="worldElement" class="text-blue-600"></span>
-    <span class="cursor">|</span>
-  </h1>
+  <div
+    class="flex flex-row flex-wrap items-center justify-center gap-5 p-3 md:p-5 lg:p-10"
+  >
+    <div class="md:basis-1/2 lg:basis-1/3">
+      <div>
+        <h1 class="text-4xl font-bold">
+          <span ref="helloElement" class=""></span>
+          <span ref="worldElement" class="text-blue-600"></span>
+          <span class="cursor">|</span>
+        </h1>
+      </div>
+      <div>
+        <p class="text-gray-500">{{ t("message.position") }}</p>
+        <span class="text-blue-600">{{ t("message.years") }}</span
+        ><span> {{ t("message.experience") }}</span
+        ><br />
+        <span class="text-blue-600">{{ t("message.projectsNumber") }}</span
+        ><span> {{ t("message.projects") }}</span>
+      </div>
+      <div class="flex space-x-4 mt-4">
+        <button
+          class="rounded p-1 border-transparent animate-borderRainbow hover:bg-blue-600 hover:border-b-0 flex items-center space-x-2"
+        >
+          <font-awesome-icon :icon="['fas', 'file-arrow-down']" />
+          <span>Cv</span>
+        </button>
+        <a
+          href="https://github.com/AxlGuillen"
+          target="_blank"
+          class="border-b-4 rounded p-1 border-blue-600 hover:bg-gray-600 hover:border-b-0 flex items-center justify-center w-10 h-10"
+        >
+          <font-awesome-icon :icon="['fab', 'github']" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/axl-eduardo-guillen-luna-b63541279/"
+          target="_blank"
+          class="border-b-4 rounded p-1 border-blue-600 hover:bg-blue-700 hover:border-b-0 flex items-center justify-center w-10 h-10"
+        >
+          <font-awesome-icon :icon="['fab', 'linkedin']" />
+        </a>
+      </div>
+    </div>
+    <div class="md:basis-1/2 lg:basis-1/3">
+      <img src="/src/assets/yo.jpg" alt="Yo mero" />
+    </div>
+  </div>
 
-  <button class="animate-wiggle">¡Mírame moverme!</button>
-  <button class="animate-jump-in animate-delay-600 animate-once">
-    Espera un poco, luego entra saltando.
-  </button>
-
-  <div class="wrapper">
+  <!-- Titulos -->
+  <!-- <div class="wrapper">
     <svg>
       <text x="50%" y="50%" dy=".35em" text-anchor="middle">Experiencia</text>
     </svg>
-  </div>
+  </div> -->
 
-  <DotLottieVue
+  <!-- Gifs animados -->
+  <!-- <DotLottieVue
     style="height: 500px; width: 500px"
     autoplay
     loop
     src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json"
-  />
+  /> -->
 </template>
 
 
@@ -70,6 +108,111 @@ onMounted(() => {
   50% {
     opacity: 0;
   }
+}
+
+@keyframes borderRainbow {
+  0% {
+    border-image-source: linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    );
+  }
+  14% {
+    border-image-source: linear-gradient(
+      90deg,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet,
+      red
+    );
+  }
+  28% {
+    border-image-source: linear-gradient(
+      90deg,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet,
+      red,
+      orange
+    );
+  }
+  42% {
+    border-image-source: linear-gradient(
+      90deg,
+      green,
+      blue,
+      indigo,
+      violet,
+      red,
+      orange,
+      yellow
+    );
+  }
+  56% {
+    border-image-source: linear-gradient(
+      90deg,
+      blue,
+      indigo,
+      violet,
+      red,
+      orange,
+      yellow,
+      green
+    );
+  }
+  70% {
+    border-image-source: linear-gradient(
+      90deg,
+      indigo,
+      violet,
+      red,
+      orange,
+      yellow,
+      green,
+      blue
+    );
+  }
+  84% {
+    border-image-source: linear-gradient(
+      90deg,
+      violet,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo
+    );
+  }
+  100% {
+    border-image-source: linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    );
+  }
+}
+
+.animate-borderRainbow {
+  border-bottom-width: 4px;
+  border-image-slice: 1;
+  animation: borderRainbow 5s linear infinite;
 }
 
 .cursor {

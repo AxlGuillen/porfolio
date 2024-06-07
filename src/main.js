@@ -12,10 +12,10 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import "@fortawesome/fontawesome-free/css/all.css";
 
 // Añade manualmente los íconos que vas a usar
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faHome, faGithub, faLinkedin);
+library.add(faHome, faFileArrowDown, faGithub, faLinkedin);
 
 // Optimiza el DOM para cargar solo los íconos utilizados
 dom.watch();
