@@ -2,12 +2,16 @@
 </script>
 
 <template>
-  <h1>Contact</h1>
+  <div
+    class="template bg-cover bg-no-repeat animate-fade-right animate-ease-linear"
+  >
+    <h1>Projects</h1>
+  </div>
 </template>
 
 <style scoped>
 .template {
-  width: 100vh;
-  background-image: url("/src/assets/bg/izquierda.png");
+  height: 500px;
+  background-image: url("");
 }
 </style>

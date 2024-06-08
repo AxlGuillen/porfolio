@@ -12,6 +12,6 @@
 <style scoped>
 .template {
   height: 500px;
-  background-image: url("/src/assets/bg/izquierda.png");
+  background-image: url("");
 }
 </style>
