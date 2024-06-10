@@ -36,12 +36,14 @@
       <div
         class="flex space-x-4 mt-4 animate-fade-right animate-once animate-delay-[3000ms] animate-ease-in"
       >
-        <button
+        <a
+          href="/docs/CV-GUILLEN-AXL.pdf"
+          download="Axl_Guillen_CV.pdf"
           class="rounded p-1 border-b-4 border-blue-600 hover:bg-blue-600 hover:border-b-0 flex items-center space-x-2 animate-bounce animate-infinite animate-delay-[3600ms]"
         >
           <font-awesome-icon :icon="['fas', 'file-arrow-down']" />
           <span>Cv</span>
-        </button>
+        </a>
         <a
           href="https://github.com/AxlGuillen"
           target="_blank"
