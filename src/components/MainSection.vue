@@ -43,7 +43,7 @@
     </div>
     <div class="relative md:basis-1/2 lg:basis-1/3">
       <div
-        class="absolute inset-0 border-4 border-blue-600 rounded-3xl transform translate-x-5 translate-y-5"
+        class="absolute inset-0 border-4 animate-borderRainbow transform translate-x-5 translate-y-5"
       ></div>
       <img
         class="relative z-10 rounded-3xl border-4"
@@ -119,100 +119,28 @@ onMounted(() => {
 
 @keyframes borderRainbow {
   0% {
-    border-image-source: linear-gradient(
-      90deg,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet
-    );
+    border-image-source: linear-gradient(90deg, red, orange, yellow);
   }
-  14% {
-    border-image-source: linear-gradient(
-      90deg,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet,
-      red
-    );
+  14.29% {
+    border-image-source: linear-gradient(90deg, orange, yellow, green);
   }
-  28% {
-    border-image-source: linear-gradient(
-      90deg,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet,
-      red,
-      orange
-    );
+  28.57% {
+    border-image-source: linear-gradient(90deg, yellow, green, blue);
   }
-  42% {
-    border-image-source: linear-gradient(
-      90deg,
-      green,
-      blue,
-      indigo,
-      violet,
-      red,
-      orange,
-      yellow
-    );
+  42.86% {
+    border-image-source: linear-gradient(90deg, green, blue, indigo);
   }
-  56% {
-    border-image-source: linear-gradient(
-      90deg,
-      blue,
-      indigo,
-      violet,
-      red,
-      orange,
-      yellow,
-      green
-    );
+  57.14% {
+    border-image-source: linear-gradient(90deg, blue, indigo, violet);
   }
-  70% {
-    border-image-source: linear-gradient(
-      90deg,
-      indigo,
-      violet,
-      red,
-      orange,
-      yellow,
-      green,
-      blue
-    );
+  71.43% {
+    border-image-source: linear-gradient(90deg, indigo, violet, red);
   }
-  84% {
-    border-image-source: linear-gradient(
-      90deg,
-      violet,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo
-    );
+  85.71% {
+    border-image-source: linear-gradient(90deg, violet, red, orange);
   }
   100% {
-    border-image-source: linear-gradient(
-      90deg,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet
-    );
+    border-image-source: linear-gradient(90deg, red, orange, yellow);
   }
 }
 
