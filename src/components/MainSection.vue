@@ -4,23 +4,40 @@
   >
     <div class="md:basis-1/2 lg:basis-1/3">
       <div>
-        <h1 class="text-4xl font-bold">
+        <h1 class="text-2xl md:text-4xl font-bold">
           <span ref="helloElement" class=""></span>
           <span ref="worldElement" class="text-blue-600"></span>
           <span class="cursor">|</span>
         </h1>
       </div>
-      <div>
-        <p class="text-gray-500">{{ t("message.position") }}</p>
-        <span class="text-blue-600">{{ t("message.years") }}</span
-        ><span> {{ t("message.experience") }}</span
+      <div class="">
+        <p
+          class="text-gray-500 animate-jump-in animate-once animate-delay-[2500ms] animate-ease-in animate-alternate"
+        >
+          {{ t("message.position") }}
+        </p>
+        <span
+          class="text-blue-600 mr-2 animate-flip-up animate-once animate-delay-[3000ms] inline-block"
+          >{{ t("message.years") }}</span
+        ><span
+          class="animate-flip-up animate-once animate-delay-[3000ms] inline-block"
+        >
+          {{ t("message.experience") }}</span
         ><br />
-        <span class="text-blue-600">{{ t("message.projectsNumber") }}</span
-        ><span> {{ t("message.projects") }}</span>
+        <span
+          class="text-blue-600 mr-2 animate-flip-up animate-once animate-delay-[3000ms] inline-block"
+          >{{ t("message.projectsNumber") }}</span
+        ><span
+          class="animate-flip-up animate-once animate-delay-[3000ms] inline-block"
+        >
+          {{ t("message.projects") }}</span
+        >
       </div>
-      <div class="flex space-x-4 mt-4">
+      <div
+        class="flex space-x-4 mt-4 animate-fade-right animate-once animate-delay-[3000ms] animate-ease-in"
+      >
         <button
-          class="rounded p-1 border-transparent animate-borderRainbow hover:bg-blue-600 hover:border-b-0 flex items-center space-x-2"
+          class="rounded p-1 border-b-4 border-blue-600 hover:bg-blue-600 hover:border-b-0 flex items-center space-x-2 animate-bounce animate-infinite animate-delay-[3600ms]"
         >
           <font-awesome-icon :icon="['fas', 'file-arrow-down']" />
           <span>Cv</span>
@@ -41,14 +58,16 @@
         </a>
       </div>
     </div>
-    <div class="relative md:basis-1/2 lg:basis-1/3">
+    <div
+      class="relative md:basis-1/2 lg:basis-1/3 animate-fade-left animate-once animate-delay-[2500ms] animate-ease-in"
+    >
       <div
         class="absolute inset-0 border-4 animate-borderRainbow transform translate-x-5 translate-y-5"
       ></div>
       <img
-        class="relative z-10 rounded-3xl border-4"
+        class="relative z-10"
         src="/src/assets/yo.jpg"
-        alt="Yo mero"
+        alt="Foto de Axl Guillen"
       />
     </div>
   </div>
