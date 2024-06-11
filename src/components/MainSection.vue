@@ -1,96 +1,85 @@
 <template>
-  <div
-    class="flex flex-row flex-wrap items-center justify-center gap-5 p-3 md:p-5 lg:p-10"
-  >
-    <div class="md:basis-1/2 lg:basis-1/3">
-      <div>
-        <h1 class="text-2xl md:text-4xl font-bold">
-          <span ref="helloElement" class=""></span>
-          <span ref="worldElement" class="text-blue-600"></span>
-          <span class="cursor">|</span>
-        </h1>
-      </div>
-      <div class="">
-        <p
-          class="text-gray-500 animate-jump-in animate-once animate-delay-[2500ms] animate-ease-in animate-alternate"
-        >
-          {{ t("message.position") }}
-        </p>
-        <span
-          class="text-blue-600 mr-2 animate-flip-up animate-once animate-delay-[3000ms] inline-block"
-          >{{ t("message.years") }}</span
-        ><span
-          class="animate-flip-up animate-once animate-delay-[3000ms] inline-block"
-        >
-          {{ t("message.experience") }}</span
-        ><br />
-        <span
-          class="text-blue-600 mr-2 animate-flip-up animate-once animate-delay-[3000ms] inline-block"
-          >{{ t("message.projectsNumber") }}</span
-        ><span
-          class="animate-flip-up animate-once animate-delay-[3000ms] inline-block"
-        >
-          {{ t("message.projects") }}</span
-        >
-      </div>
-      <div
-        class="flex space-x-4 mt-4 animate-fade-right animate-once animate-delay-[3000ms] animate-ease-in"
-      >
-        <a
-          href="/docs/CV-GUILLEN-AXL.pdf"
-          download="Axl_Guillen_CV.pdf"
-          class="rounded p-1 border-b-4 border-blue-600 hover:bg-blue-600 hover:border-b-0 flex items-center space-x-2 animate-bounce animate-infinite animate-delay-[3600ms]"
-        >
-          <font-awesome-icon :icon="['fas', 'file-arrow-down']" />
-          <span>Cv</span>
-        </a>
-        <a
-          href="https://github.com/AxlGuillen"
-          target="_blank"
-          class="border-b-4 rounded p-1 border-blue-600 hover:bg-gray-600 hover:border-b-0 flex items-center justify-center w-10 h-10"
-        >
-          <font-awesome-icon :icon="['fab', 'github']" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/axl-eduardo-guillen-luna-b63541279/"
-          target="_blank"
-          class="border-b-4 rounded p-1 border-blue-600 hover:bg-blue-700 hover:border-b-0 flex items-center justify-center w-10 h-10"
-        >
-          <font-awesome-icon :icon="['fab', 'linkedin']" />
-        </a>
-      </div>
-    </div>
+  <div class="video-background-container">
+    <video autoplay loop muted playsinline class="video-background">
+      <source src="../assets/bg/video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
     <div
-      class="relative md:basis-1/2 lg:basis-1/3 animate-fade-left animate-once animate-delay-[2500ms] animate-ease-in"
+      class="content-container flex flex-row flex-wrap items-center justify-center gap-5 p-3 md:p-5 lg:p-10 bg-transparent"
     >
+      <div class="md:basis-1/2 lg:basis-1/3">
+        <div>
+          <h1 class="text-2xl md:text-4xl font-bold">
+            <span ref="helloElement" class=""></span>
+            <span ref="worldElement" class="text-blue-600"></span>
+            <span class="cursor">|</span>
+          </h1>
+        </div>
+        <div class="">
+          <p
+            class="text-gray-500 animate-jump-in animate-once animate-delay-[2500ms] animate-ease-in animate-alternate"
+          >
+            {{ t("message.position") }}
+          </p>
+          <span
+            class="text-blue-600 mr-2 animate-flip-up animate-once animate-delay-[3000ms] inline-block"
+            >{{ t("message.years") }}</span
+          ><span
+            class="animate-flip-up animate-once animate-delay-[3000ms] inline-block"
+          >
+            {{ t("message.experience") }}</span
+          ><br />
+          <span
+            class="text-blue-600 mr-2 animate-flip-up animate-once animate-delay-[3000ms] inline-block"
+            >{{ t("message.projectsNumber") }}</span
+          ><span
+            class="animate-flip-up animate-once animate-delay-[3000ms] inline-block"
+          >
+            {{ t("message.projects") }}</span
+          >
+        </div>
+        <div
+          class="flex space-x-4 mt-4 animate-fade-right animate-once animate-delay-[3000ms] animate-ease-in"
+        >
+          <a
+            href="/docs/CV-GUILLEN-AXL.pdf"
+            download="Axl_Guillen_CV.pdf"
+            class="rounded p-1 border-b-4 border-blue-600 hover:bg-blue-600 hover:border-b-0 flex items-center space-x-2 animate-bounce animate-infinite animate-delay-[3600ms]"
+          >
+            <font-awesome-icon :icon="['fas', 'file-arrow-down']" />
+            <span>Cv</span>
+          </a>
+          <a
+            href="https://github.com/AxlGuillen"
+            target="_blank"
+            class="border-b-4 rounded p-1 border-blue-600 hover:bg-gray-600 hover:border-b-0 flex items-center justify-center w-10 h-10"
+          >
+            <font-awesome-icon :icon="['fab', 'github']" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/axl-eduardo-guillen-luna-b63541279/"
+            target="_blank"
+            class="border-b-4 rounded p-1 border-blue-600 hover:bg-blue-700 hover:border-b-0 flex items-center justify-center w-10 h-10"
+          >
+            <font-awesome-icon :icon="['fab', 'linkedin']" />
+          </a>
+        </div>
+      </div>
       <div
-        class="absolute inset-0 border-4 animate-borderRainbow transform translate-x-5 translate-y-5"
-      ></div>
-      <img
-        class="relative z-10"
-        src="/src/assets/yo.jpg"
-        alt="Foto de Axl Guillen"
-      />
+        class="relative md:basis-1/2 lg:basis-1/3 animate-fade-left animate-once animate-delay-[2500ms] animate-ease-in"
+      >
+        <div
+          class="absolute inset-0 border-4 animate-borderRainbow transform translate-x-2 translate-y-2"
+        ></div>
+        <img
+          class="relative z-10"
+          src="/src/assets/yo.jpg"
+          alt="Foto de Axl Guillen"
+        />
+      </div>
     </div>
   </div>
-
-  <!-- Titulos -->
-  <!-- <div class="wrapper">
-    <svg>
-      <text x="50%" y="50%" dy=".35em" text-anchor="middle">Experiencia</text>
-    </svg>
-  </div> -->
-
-  <!-- Gifs animados -->
-  <!-- <DotLottieVue
-    style="height: 500px; width: 500px"
-    autoplay
-    loop
-    src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json"
-  /> -->
 </template>
-
-
 
 <script setup>
 import { onMounted, ref } from "vue";
@@ -129,9 +118,31 @@ onMounted(() => {
 });
 </script>
 
-
-
 <style>
+.video-background-container {
+  position: relative;
+  width: 100%;
+  height: auto; /* Ajusta según sea necesario */
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Rest of your styles */
 @keyframes blink {
   50% {
     opacity: 0;
