@@ -138,7 +138,7 @@ onMounted(() => {
 }
 
 .video-background-container::after {
-  content: "hi";
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
