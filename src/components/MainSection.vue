@@ -122,8 +122,8 @@ onMounted(() => {
 .video-background-container {
   position: relative;
   width: 100%;
-  height: auto; /* Ajusta según sea necesario */
-  min-height: 500px;
+  height: auto;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 
@@ -135,6 +135,21 @@ onMounted(() => {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+.video-background-container::after {
+  content: "hi";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%; /* Ajusta la altura del gradiente según sea necesario */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 100%
+  );
+  z-index: 0;
 }
 
 .content-container {
