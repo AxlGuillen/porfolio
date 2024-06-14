@@ -5,7 +5,6 @@ import Title from "./components/shared/Title.vue";
 
 <template>
   <MainSectionVue />
-  <Title title="Experiencia" />
 </template>
 
 <style scoped>
