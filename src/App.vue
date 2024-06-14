@@ -1,5 +1,5 @@
 <script setup>
-import MainSectionVue from "./components/MainSection.vue";
+import MainSectionVue from "./views/MainView.vue";
 import Title from "./components/shared/Title.vue";
 </script>
 
