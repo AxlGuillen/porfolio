@@ -9,18 +9,18 @@
     >
       <div class="md:basis-1/2 lg:basis-1/3">
         <div>
+          <p
+            class="text-sm text-gray-300 animate-jump-in animate-once animate-delay-[2500ms] animate-ease-in animate-alternate"
+          >
+            {{ t("message.position") }}
+          </p>
           <h1 class="text-2xl md:text-4xl font-bold">
             <span ref="helloElement" class=""></span>
             <span ref="worldElement" class="text-blue-600"></span>
             <span class="cursor">|</span>
           </h1>
         </div>
-        <div class="">
-          <p
-            class="text-gray-500 animate-jump-in animate-once animate-delay-[2500ms] animate-ease-in animate-alternate"
-          >
-            {{ t("message.position") }}
-          </p>
+        <div>
           <span
             class="text-blue-600 mr-2 animate-flip-up animate-once animate-delay-[3000ms] inline-block"
             >{{ t("message.years") }}</span
@@ -47,7 +47,7 @@
             class="rounded p-1 border-b-4 border-blue-600 hover:bg-blue-600 hover:border-b-0 flex items-center space-x-2 animate-bounce animate-infinite animate-delay-[3600ms]"
           >
             <font-awesome-icon :icon="['fas', 'file-arrow-down']" />
-            <span>Cv</span>
+            <span class="text-sm">{{ t("message.cv") }}</span>
           </a>
           <a
             href="https://github.com/AxlGuillen"
@@ -143,7 +143,7 @@ onMounted(() => {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 20%; /* Ajusta la altura del gradiente según sea necesario */
+  height: 20%;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
@@ -200,45 +200,5 @@ onMounted(() => {
 .cursor {
   font-weight: bold;
   animation: blink 1s step-end infinite;
-}
-
-svg {
-  width: 100%;
-  height: 100%;
-}
-svg text {
-  animation: stroke 3s infinite alternate;
-  stroke-width: 3;
-  stroke: #ffffff;
-  font-size: 55px;
-}
-@keyframes stroke {
-  0% {
-    fill: rgba(204, 204, 204, 0);
-    stroke: rgba(255, 255, 255, 1);
-    stroke-dashoffset: 25%;
-    stroke-dasharray: 0 50%;
-    stroke-width: 2;
-  }
-  70% {
-    fill: rgba(204, 204, 204, 0);
-    stroke: rgba(255, 255, 255, 1);
-  }
-  80% {
-    fill: rgba(204, 204, 204, 0);
-    stroke: rgba(255, 255, 255, 1);
-    stroke-width: 3;
-  }
-  100% {
-    fill: rgba(204, 204, 204, 1);
-    stroke: rgba(255, 255, 255, 0);
-    stroke-dashoffset: -25%;
-    stroke-dasharray: 50% 0;
-    stroke-width: 0;
-  }
-}
-
-.wrapper {
-  background-color: #000000;
 }
 </style>
