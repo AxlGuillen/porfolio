@@ -1,11 +1,11 @@
 <script setup>
 import MainSectionVue from "./components/MainSection.vue";
-import TitleComponent from "./components/shared/TitleComponent.vue";
+import Title from "./components/shared/Title.vue";
 </script>
 
 <template>
   <MainSectionVue />
-  <TitleComponent />
+  <Title title="Experiencia" />
 </template>
 
 <style scoped>
