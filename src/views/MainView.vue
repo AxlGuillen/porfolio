@@ -64,6 +64,36 @@
             <font-awesome-icon :icon="['fab', 'linkedin']" />
           </a>
         </div>
+        <div class="flex flex-row gap-3">
+          <img src="../assets/iconos/python.png" alt="Python" class="h-6 w-6" />
+          <img src="../assets/iconos/js.png" alt="JavaScript" class="h-6 w-6" />
+          <img src="../assets/iconos/vue.png" alt="Vue" class="h-6 w-6" />
+          <img
+            src="../assets/iconos/laravel.png"
+            alt="Laravel"
+            class="h-6 w-6"
+          />
+          <img
+            src="../assets/iconos/tailwind.png"
+            alt="Tailwind"
+            class="h-6 w-6"
+          />
+          <img
+            src="../assets/iconos/flutter.png"
+            alt="Flutter"
+            class="h-6 w-6"
+          />
+          <img
+            src="../assets/iconos/firebase.png"
+            alt="Firebase"
+            class="h-6 w-6"
+          />
+          <img
+            src="../assets/iconos/postgres.png"
+            alt="Postgres "
+            class="h-6 w-6"
+          />
+        </div>
       </div>
       <div
         class="relative md:basis-1/2 lg:basis-1/3 animate-fade-left animate-once animate-delay-[2500ms] animate-ease-in"
