@@ -45,7 +45,7 @@
           <a
             href="https://github.com/AxlGuillen"
             target="_blank"
-            class="border-b-4 rounded p-1 border-blue-600 hover:bg-gray-600 hover:border-b-0 flex items-center justify-center w-10 h-10"
+            class="border-b-4 rounded p-1 border-blue-600 hover:bg-blue-600 hover:border-b-0 flex items-center justify-center w-10 h-10"
           >
             <font-awesome-icon :icon="['fab', 'github']" />
           </a>
