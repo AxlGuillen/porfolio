@@ -32,7 +32,7 @@
           ><span class="inline-block"> {{ t("message.projects") }}</span>
         </div>
         <div
-          class="flex space-x-4 mt-4 animate-flip-up animate-once animate-delay-[3500ms]"
+          class="flex space-x-4 my-4 animate-flip-up animate-once animate-delay-[3500ms]"
         >
           <a
             href="/docs/CV-GUILLEN-AXL.pdf"
@@ -58,10 +58,10 @@
           </a>
         </div>
         <div
-          class="flex flex-col gap-3 mt-2 animate-flip-up animate-once animate-delay-[4000ms]"
+          class="flex flex-col gap-y-2 animate-flip-up animate-once animate-delay-[4000ms]"
         >
           <div>
-            <h1 class="text-sm">Skills</h1>
+            <h1 class="text-sm">{{ t("message.skills") }}</h1>
           </div>
           <div class="flex flex-row gap-3">
             <img
