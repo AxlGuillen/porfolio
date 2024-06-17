@@ -26,7 +26,7 @@
           }}</span
           ><span class="inline-block"> {{ t("message.experience") }}</span
           ><br />
-          <span class="text-blue-600 mr-2inline-block">{{
+          <span class="text-blue-600 mr-2 inline-block">{{
             t("message.projectsNumber")
           }}</span
           ><span class="inline-block"> {{ t("message.projects") }}</span>
@@ -37,7 +37,7 @@
           <a
             href="/docs/CV-GUILLEN-AXL.pdf"
             download="Axl_Guillen_CV.pdf"
-            class="rounded p-1 border-b-4 border-blue-600 hover:bg-blue-600 hover:border-b-0 flex items-center space-x-2 animate-bounce animate-infinite animate-delay-[3600ms]"
+            class="rounded p-1 border-b-4 border-blue-600 hover:bg-blue-600 hover:border-b-0 flex items-center space-x-2"
           >
             <font-awesome-icon :icon="['fas', 'file-arrow-down']" />
             <span class="text-sm">{{ t("message.cv") }}</span>
@@ -104,7 +104,7 @@
         </div>
       </div>
       <div
-        class="relative md:basis-1/2 lg:basis-1/3 animate-fade-left animate-once animate-delay-[2500ms] animate-ease-in"
+        class="relative md:basis-1/2 lg:basis-1/3 animate-jump-in animate-once animate-ease-out animate-delay-[4500ms]"
       >
         <div
           class="absolute inset-0 border-4 animate-borderRainbow transform translate-x-2 translate-y-2"
