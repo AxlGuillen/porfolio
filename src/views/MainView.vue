@@ -20,26 +20,19 @@
             <span class="cursor">|</span>
           </h1>
         </div>
-        <div>
-          <span
-            class="text-blue-600 mr-2 animate-flip-up animate-once animate-delay-[3000ms] inline-block"
-            >{{ t("message.years") }}</span
-          ><span
-            class="animate-flip-up animate-once animate-delay-[3000ms] inline-block"
-          >
-            {{ t("message.experience") }}</span
+        <div class="animate-flip-up animate-once animate-delay-[3000ms]">
+          <span class="text-blue-600 mr-2 inline-block">{{
+            t("message.years")
+          }}</span
+          ><span class="inline-block"> {{ t("message.experience") }}</span
           ><br />
-          <span
-            class="text-blue-600 mr-2 animate-flip-up animate-once animate-delay-[3000ms] inline-block"
-            >{{ t("message.projectsNumber") }}</span
-          ><span
-            class="animate-flip-up animate-once animate-delay-[3000ms] inline-block"
-          >
-            {{ t("message.projects") }}</span
-          >
+          <span class="text-blue-600 mr-2inline-block">{{
+            t("message.projectsNumber")
+          }}</span
+          ><span class="inline-block"> {{ t("message.projects") }}</span>
         </div>
         <div
-          class="flex space-x-4 mt-4 animate-fade-right animate-once animate-delay-[3000ms] animate-ease-in"
+          class="flex space-x-4 mt-4 animate-flip-up animate-once animate-delay-[3500ms]"
         >
           <a
             href="/docs/CV-GUILLEN-AXL.pdf"
@@ -65,7 +58,7 @@
           </a>
         </div>
         <div
-          class="flex flex-col gap-3 mt-2 animate-fade-up animate-once animate-delay-[3300ms] animate-ease-in"
+          class="flex flex-col gap-3 mt-2 animate-flip-up animate-once animate-delay-[4000ms]"
         >
           <div>
             <h1 class="text-sm">Skills</h1>
