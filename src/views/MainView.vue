@@ -12,7 +12,7 @@
           <p
             class="text-sm text-gray-300 animate-jump-in animate-once animate-delay-[2500ms] animate-ease-in animate-alternate"
           >
-            {{ t("message.position") }}
+            {{ t("presentation.position") }}
           </p>
           <h1 class="text-2xl md:text-4xl font-bold">
             <span ref="helloElement" class=""></span>
@@ -22,14 +22,14 @@
         </div>
         <div class="animate-flip-up animate-once animate-delay-[3000ms]">
           <span class="text-blue-600 mr-2 inline-block">{{
-            t("message.years")
+            t("presentation.years")
           }}</span
-          ><span class="inline-block"> {{ t("message.experience") }}</span
+          ><span class="inline-block"> {{ t("presentation.experience") }}</span
           ><br />
           <span class="text-blue-600 mr-2 inline-block">{{
-            t("message.projectsNumber")
+            t("presentation.projectsNumber")
           }}</span
-          ><span class="inline-block"> {{ t("message.projects") }}</span>
+          ><span class="inline-block"> {{ t("presentation.projects") }}</span>
         </div>
         <div
           class="flex space-x-4 my-4 animate-flip-up animate-once animate-delay-[3500ms]"
@@ -40,7 +40,7 @@
             class="rounded p-1 border-b-4 border-blue-600 hover:bg-blue-600 hover:border-b-0 flex items-center space-x-2"
           >
             <font-awesome-icon :icon="['fas', 'file-arrow-down']" />
-            <span class="text-sm">{{ t("message.cv") }}</span>
+            <span class="text-sm">{{ t("presentation.cv") }}</span>
           </a>
           <a
             href="https://github.com/AxlGuillen"
@@ -61,7 +61,7 @@
           class="flex flex-col gap-y-2 animate-flip-up animate-once animate-delay-[4000ms]"
         >
           <div>
-            <h1 class="text-sm">{{ t("message.skills") }}</h1>
+            <h1 class="text-sm">{{ t("presentation.skills") }}</h1>
           </div>
           <div class="flex flex-row gap-3">
             <img
@@ -131,8 +131,8 @@ let i = 0,
   j = 0;
 
 onMounted(() => {
-  const helloText = t("message.hello1");
-  const worldText = t("message.hello2");
+  const helloText = t("presentation.im");
+  const worldText = t("presentation.name");
 
   function typeWriterHello() {
     if (i < helloText.length) {
