@@ -15,6 +15,9 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import { faHome, faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+// marquee
+import Vue3Marquee from "vue3-marquee";
+
 library.add(faHome, faFileArrowDown, faGithub, faLinkedin);
 
 // Optimiza el DOM para cargar solo los íconos utilizados
@@ -42,6 +45,7 @@ loadLocaleMessages().then((messages) => {
 
   const app = createApp(App);
   app.use(i18n);
+  app.use(Vue3Marquee);
 
   // Registrar el componente globalmente
   app.component("DotLottieVue", DotLottieVue);
