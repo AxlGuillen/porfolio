@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "cover": "url_de_la_portada_1",
+      "title": "Proyecto 1",
+      "description": "Descripción del proyecto 1.",
+      "technologies": ["Tecnología 1", "Tecnología 2", "Tecnología 3"],
+      "links": {
+        "repository": "url_del_repositorio_1",
+        "demo": "url_del_demo_1"
+      }
+    },
+    {
+      "cover": "url_de_la_portada_2",
+      "title": "Proyecto 2",
+      "description": "Descripción del proyecto 2.",
+      "technologies": ["Tecnología 1", "Tecnología 2"],
+      "links": {
+        "repository": "url_del_repositorio_2",
+        "demo": "url_del_demo_2"
+      }
+    },
+    {
+      "cover": "url_de_la_portada_3",
+      "title": "Proyecto 3",
+      "description": "Descripción del proyecto 3.",
+      "technologies": [
+        "Tecnología 1",
+        "Tecnología 2",
+        "Tecnología 3",
+        "Tecnología 4"
+      ],
+      "links": {
+        "repository": "url_del_repositorio_3",
+        "demo": "url_del_demo_3"
+      }
+    }
+  ]
+}
