@@ -2,9 +2,9 @@
   "projects": [
     {
       "cover": "url_de_la_portada_1",
-      "title": "Proyecto 1",
+      "title": "Noa.ai",
       "description": "Descripción del proyecto 1.",
-      "technologies": ["Tecnología 1", "Tecnología 2", "Tecnología 3"],
+      "technologies": ["vue.png", "firebase.png", "js.png"],
       "links": {
         "repository": "url_del_repositorio_1",
         "demo": "url_del_demo_1"
@@ -12,7 +12,7 @@
     },
     {
       "cover": "url_de_la_portada_2",
-      "title": "Proyecto 2",
+      "title": "API",
       "description": "Descripción del proyecto 2.",
       "technologies": ["Tecnología 1", "Tecnología 2"],
       "links": {
@@ -22,7 +22,22 @@
     },
     {
       "cover": "url_de_la_portada_3",
-      "title": "Proyecto 3",
+      "title": "PWA whatsapp",
+      "description": "Descripción del proyecto 3.",
+      "technologies": [
+        "Tecnología 1",
+        "Tecnología 2",
+        "Tecnología 3",
+        "Tecnología 4"
+      ],
+      "links": {
+        "repository": "url_del_repositorio_3",
+        "demo": "url_del_demo_3"
+      }
+    },
+    {
+      "cover": "url_de_la_portada_3",
+      "title": "Blackjack",
       "description": "Descripción del proyecto 3.",
       "technologies": [
         "Tecnología 1",
