@@ -31,18 +31,13 @@
       }
     },
     {
-      "cover": "url_de_la_portada_3",
+      "cover": "@/assets/projects/blackjack.png",
       "title": "Blackjack",
-      "description": "Descripción del proyecto 3.",
-      "technologies": [
-        "Tecnología 1",
-        "Tecnología 2",
-        "Tecnología 3",
-        "Tecnología 4"
-      ],
+      "description": "Este proyecto, desarrollado exclusivamente con JavaScript, es un juego de blackjack diseñado para varios jugadores donde la computadora siempre busca ganar, siguiendo todas las reglas tradicionales del juego. Tecnológicamente, el proyecto fue creado para probar Vite y GitHub Pages. Esta configuración permite construir el proyecto y, al hacer un commit en GitHub, se actualiza automáticamente en el despliegue, facilitando un flujo de trabajo eficiente y continuo.",
+      "technologies": ["js.png"],
       "links": {
-        "repository": "url_del_repositorio_3",
-        "demo": "url_del_demo_3"
+        "repository": "https://github.com/AxlGuillen/blackjack-vite",
+        "demo": "https://axlguillen.github.io/blackjack-vite/"
       }
     }
   ]
