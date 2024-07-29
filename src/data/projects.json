@@ -3,11 +3,11 @@
     {
       "cover": "url_de_la_portada_1",
       "title": "Noa.ai",
-      "description": "Descripción del proyecto 1.",
+      "description": "Noa.ai es un chatbot avanzado potenciado por el API de ChatGPT, diseñado para ofrecer compañía y apoyo emocional a personas que se sienten solas o que no tienen con quién hablar. Gracias a la inteligencia artificial, Noa.ai puede ayudar a los usuarios a reflexionar y entender sus problemas de una manera diferente, actuando como un amigo de confianza que siempre está disponible para escuchar y conversar. Para asegurar una experiencia personalizada, Noa.ai se entrena con los datos del usuario obtenidos a través de encuestas, lo que le permite conocer sus gustos y necesidades, y ofrecer respuestas más acertadas y comprensivas. Este enfoque hace que el chatbot se sienta como un amigo de toda la vida, proporcionando una conversación más significativa y empática. En términos técnicos, Noa.ai utiliza Firebase para el hosting, la base de datos y los servicios de autenticación, soportando métodos de inicio de sesión mediante correo electrónico, Facebook y Google. Además, se integran varios servicios del API de ChatGPT, incluyendo el modelo de lenguaje, Speech to Text y Text to Speech, para ofrecer una interacción más natural y fluida.",
       "technologies": ["vue.png", "firebase.png", "js.png"],
       "links": {
-        "repository": "url_del_repositorio_1",
-        "demo": "url_del_demo_1"
+        "repository": "https://github.com/AxlGuillen/noa.ai",
+        "demo": "https://noa1-f2c78.web.app/"
       }
     },
     {
