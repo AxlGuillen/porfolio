@@ -21,18 +21,13 @@
       }
     },
     {
-      "cover": "",
+      "cover": "@/assets/projects/nextik.png",
       "title": "PWA whatsapp",
-      "description": "Descripción del proyecto 3.",
-      "technologies": [
-        "Tecnología 1",
-        "Tecnología 2",
-        "Tecnología 3",
-        "Tecnología 4"
-      ],
+      "description": "En este proyecto participé en la conversión de una página web existente a una Progressive Web App (PWA). La página original permitía generar un enlace para enviar mensajes a través de WhatsApp a un número no registrado en la lista de contactos del usuario, evitando así la necesidad de agregar el número a los contactos. Al convertir la página en una PWA, los usuarios pueden instalar la web en sus dispositivos, ya sea un teléfono Android o iOS, o en una computadora, emulando el comportamiento de una aplicación nativa. Las ventajas de esta conversión incluyen el funcionamiento offline, la actualización automática cuando hay modificaciones en la página, y una mayor accesibilidad para el usuario.",
+      "technologies": ["vue.png", "js.png"],
       "links": {
-        "repository": "url_del_repositorio_3",
-        "demo": "url_del_demo_3"
+        "repository": "https://github.com/ZeroTrace/whatsapp-message",
+        "demo": "https://mensajes.nextik.mx/"
       }
     },
     {
