@@ -1,17 +1,17 @@
 <template>
   <div>
     <p
-      class="text-sm text-gray-300 animate-jump-in animate-once animate-delay-[2500ms] animate-ease-in animate-alternate"
+      class="text-sm xl:text-xl text-gray-300 animate-jump-in animate-once animate-delay-[2500ms] animate-ease-in animate-alternate"
     >
       {{ t("presentation.position") }}
     </p>
-    <h1 class="text-2xl md:text-4xl font-bold">
+    <h1 class="text-2xl md:text-4xl xl:text-6xl font-bold">
       <span ref="helloElement" class=""></span>
       <span ref="worldElement" class="text-blue-600"></span>
       <span class="cursor">|</span>
     </h1>
-    <div class="animate-flip-up animate-once animate-delay-[3000ms]">
-      <span class="text-blue-600 mr-2 inline-block">{{
+    <div class="animate-flip-up animate-once animate-delay-[3000ms] xl:text-2xl">
+      <span class="text-blue-600 mr-2 inline-block ">{{
         t("presentation.years")
       }}</span>
       <span class="inline-block"> {{ t("presentation.experience") }}</span>

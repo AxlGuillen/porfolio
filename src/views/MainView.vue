@@ -13,7 +13,7 @@
         <Technologies />
       </div>
       <div
-        class="relative md:basis-1/2 lg:basis-1/3 animate-jump-in animate-once animate-ease-out animate-delay-[4500ms]"
+        class="relative md:basis-1/2 lg:basis-1/3 xl:basis-1/4 animate-jump-in animate-once animate-ease-out animate-delay-[4500ms]"
       >
         <div
           class="absolute inset-0 border-4 animate-borderRainbow transform translate-x-2 translate-y-2"

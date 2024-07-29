@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex space-x-4 my-4 animate-flip-up animate-once animate-delay-[3500ms]"
+    class="flex space-x-4 my-4 animate-flip-up animate-once animate-delay-[3500ms] xl:text-xl"
   >
     <a
       href="/docs/CV-GUILLEN-AXL.pdf"

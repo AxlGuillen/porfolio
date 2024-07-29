@@ -1,9 +1,9 @@
 <template>
   <div
-    class="flex flex-col gap-y-2 animate-flip-up animate-once animate-delay-[4000ms]"
+    class="flex flex-col gap-y-2 animate-flip-up animate-once animate-delay-[4000ms] max-w-md"
   >
     <div>
-      <h1 class="text-sm">{{ t("presentation.skills") }}</h1>
+      <h1 class="text-sm xl:text-2xl">{{ t("presentation.skills") }}</h1>
     </div>
 
     <Vue3Marquee :pause-on-hover="true">
