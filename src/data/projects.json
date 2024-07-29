@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "cover": "url_de_la_portada_1",
+      "cover": "@/assets/projects/noa.ai.png",
       "title": "Noa.ai",
       "description": "Noa.ai es un chatbot avanzado potenciado por el API de ChatGPT, diseñado para ofrecer compañía y apoyo emocional a personas que se sienten solas o que no tienen con quién hablar. Gracias a la inteligencia artificial, Noa.ai puede ayudar a los usuarios a reflexionar y entender sus problemas de una manera diferente, actuando como un amigo de confianza que siempre está disponible para escuchar y conversar. Para asegurar una experiencia personalizada, Noa.ai se entrena con los datos del usuario obtenidos a través de encuestas, lo que le permite conocer sus gustos y necesidades, y ofrecer respuestas más acertadas y comprensivas. Este enfoque hace que el chatbot se sienta como un amigo de toda la vida, proporcionando una conversación más significativa y empática. En términos técnicos, Noa.ai utiliza Firebase para el hosting, la base de datos y los servicios de autenticación, soportando métodos de inicio de sesión mediante correo electrónico, Facebook y Google. Además, se integran varios servicios del API de ChatGPT, incluyendo el modelo de lenguaje, Speech to Text y Text to Speech, para ofrecer una interacción más natural y fluida.",
       "technologies": ["vue.png", "firebase.png", "js.png"],
@@ -11,17 +11,17 @@
       }
     },
     {
-      "cover": "url_de_la_portada_2",
+      "cover": "@/assets/projects/api.webp",
       "title": "API",
-      "description": "Descripción del proyecto 2.",
-      "technologies": ["Tecnología 1", "Tecnología 2"],
+      "description": "Este es un proyecto de backend que consiste en la creación de una API para la gestión de cinco tablas, simulando un entorno completamente real y aplicable. Las tablas que relaciona son: clientes, productos, ventas, compras y detalles de ventas. Esto se logra mediante la utilización de una serie de tecnologías novedosas y ampliamente utilizadas. El código está escrito en TypeScript, la base de datos está en Turso, el framework utilizado es Hono, y está alojado en Cloudflare. Además, la documentación se encuentra en Hoppscotch. La implementación de este proyecto de backend utilizando TypeScript, Turso, Hono, y Cloudflare muestra un enfoque moderno y eficiente en la gestión de datos. A través de esta solución, se destaca cómo las tecnologías actuales pueden ofrecer un rendimiento superior y una mayor escalabilidad en comparación con enfoques tradicionales. Aunque este proyecto es una simulación, está construido con el mismo cuidado y precisión que se esperaría en un entorno real, lo que refleja mi capacidad para crear soluciones tecnológicas robustas y actualizadas. Esto evidencia no solo mi conocimiento técnico, sino también mi compromiso con la innovación y la calidad en el desarrollo de software.",
+      "technologies": ["ts.png", "hono.png", "cloudFlare.png"],
       "links": {
-        "repository": "url_del_repositorio_2",
-        "demo": "url_del_demo_2"
+        "repository": "https://github.com/AxlGuillen/practica1",
+        "demo": "https://practica1.axl13-dev.workers.dev/"
       }
     },
     {
-      "cover": "url_de_la_portada_3",
+      "cover": "",
       "title": "PWA whatsapp",
       "description": "Descripción del proyecto 3.",
       "technologies": [

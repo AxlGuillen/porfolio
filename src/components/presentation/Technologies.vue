@@ -34,6 +34,11 @@
         alt="Laravel"
         class="w-6 h-6 mx-1"
       />
+      <img
+        src="../../assets/iconos/hono.png"
+        alt="Hono"
+        class="w-5 mx-1"
+      />
       <img src="../../assets/iconos/vite.png" alt="Vite" class="w-6 h-6 mx-1" />
       <img
         src="../../assets/iconos/tailwind.png"
@@ -43,6 +48,11 @@
       <img
         src="../../assets/iconos/flutter.png"
         alt="Flutter"
+        class="w-6 h-6 mx-1"
+      />
+      <img
+        src="../../assets/iconos/cloudFlare.png"
+        alt="cloudFlare"
         class="w-6 h-6 mx-1"
       />
       <img
