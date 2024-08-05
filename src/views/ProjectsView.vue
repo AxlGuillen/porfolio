@@ -1,17 +1,17 @@
 <script setup>
+import Card from '../components/projects/card.vue';
+
 </script>
 
 <template>
   <div
-    class="template bg-cover bg-no-repeat animate-fade-right animate-ease-linear"
+    class="mx-auto animate-fade-right animate-ease-linear"
   >
     <h1>Projects</h1>
+
+    <card />
   </div>
 </template>
 
 <style scoped>
-.template {
-  height: 500px;
-  background-image: url("");
-}
 </style>
