@@ -2,7 +2,6 @@ import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 import "./style.css";
 import App from "./App.vue";
-import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
 
 // marquee
 import Vue3Marquee from "vue3-marquee";
@@ -30,8 +29,5 @@ loadLocaleMessages().then((messages) => {
   const app = createApp(App);
   app.use(i18n);
   app.use(Vue3Marquee);
-
-  // Registrar el componente globalmente
-  app.component("DotLottieVue", DotLottieVue);
   app.mount("#app");
 });
