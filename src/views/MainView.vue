@@ -5,9 +5,9 @@
       Your browser does not support the video tag.
     </video>
     <div
-      class="content-container flex flex-row flex-wrap items-center justify-center gap-5 p-3 md:p-5 lg:p-10 bg-transparent"
+      class="content-container flex flex-row flex-wrap md:flex-nowrap items-center justify-center gap-5 p-3 md:p-5 lg:p-10 bg-transparent"
     >
-      <div class="md:basis-1/2 lg:basis-1/3">
+      <div class="md:basis-1/2 lg:basis-1/2 xl:basis-1/3">
         <FullStack />
         <Buttons />
         <Technologies />
