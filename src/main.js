@@ -4,24 +4,8 @@ import "./style.css";
 import App from "./App.vue";
 import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
 
-// Importa la librería de Font Awesome
-import { library, dom } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
-// Importa el paquete completo de íconos
-import "@fortawesome/fontawesome-free/css/all.css";
-
-// Añade manualmente los íconos que vas a usar
-import { faHome, faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
 // marquee
 import Vue3Marquee from "vue3-marquee";
-
-library.add(faHome, faFileArrowDown, faGithub, faLinkedin);
-
-// Optimiza el DOM para cargar solo los íconos utilizados
-dom.watch();
 
 async function loadLocaleMessages() {
   const context = {
@@ -49,6 +33,5 @@ loadLocaleMessages().then((messages) => {
 
   // Registrar el componente globalmente
   app.component("DotLottieVue", DotLottieVue);
-  app.component("font-awesome-icon", FontAwesomeIcon);
   app.mount("#app");
 });
