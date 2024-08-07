@@ -1,9 +1,11 @@
 {
   "projects": [
     {
+      "id": 0,
       "cover": "@/assets/projects/noa.ai.png",
       "title": "Noa.ai",
       "description": "Noa.ai es un chatbot avanzado potenciado por el API de ChatGPT, diseñado para ofrecer compañía y apoyo emocional a personas que se sienten solas o que no tienen con quién hablar. Gracias a la inteligencia artificial, Noa.ai puede ayudar a los usuarios a reflexionar y entender sus problemas de una manera diferente, actuando como un amigo de confianza que siempre está disponible para escuchar y conversar. Para asegurar una experiencia personalizada, Noa.ai se entrena con los datos del usuario obtenidos a través de encuestas, lo que le permite conocer sus gustos y necesidades, y ofrecer respuestas más acertadas y comprensivas. Este enfoque hace que el chatbot se sienta como un amigo de toda la vida, proporcionando una conversación más significativa y empática. En términos técnicos, Noa.ai utiliza Firebase para el hosting, la base de datos y los servicios de autenticación, soportando métodos de inicio de sesión mediante correo electrónico, Facebook y Google. Además, se integran varios servicios del API de ChatGPT, incluyendo el modelo de lenguaje, Speech to Text y Text to Speech, para ofrecer una interacción más natural y fluida.",
+      "shortDescription": "Chatbot avanzado con ChatGPT y Firebase, integra Speech to Text y Text to Speech.",
       "technologies": ["vue.png", "firebase.png", "js.png"],
       "links": {
         "repository": "https://github.com/AxlGuillen/noa.ai",
@@ -11,9 +13,11 @@
       }
     },
     {
+      "id": 1,
       "cover": "@/assets/projects/api.webp",
       "title": "API",
       "description": "Este es un proyecto de backend que consiste en la creación de una API para la gestión de cinco tablas, simulando un entorno completamente real y aplicable. Las tablas que relaciona son: clientes, productos, ventas, compras y detalles de ventas. Esto se logra mediante la utilización de una serie de tecnologías novedosas y ampliamente utilizadas. El código está escrito en TypeScript, la base de datos está en Turso, el framework utilizado es Hono, y está alojado en Cloudflare. Además, la documentación se encuentra en Hoppscotch. La implementación de este proyecto de backend utilizando TypeScript, Turso, Hono, y Cloudflare muestra un enfoque moderno y eficiente en la gestión de datos. A través de esta solución, se destaca cómo las tecnologías actuales pueden ofrecer un rendimiento superior y una mayor escalabilidad en comparación con enfoques tradicionales. Aunque este proyecto es una simulación, está construido con el mismo cuidado y precisión que se esperaría en un entorno real, lo que refleja mi capacidad para crear soluciones tecnológicas robustas y actualizadas. Esto evidencia no solo mi conocimiento técnico, sino también mi compromiso con la innovación y la calidad en el desarrollo de software.",
+      "shortDescription": "API backend con TypeScript, Turso, Hono y Cloudflare, documentada en Hoppscotch.",
       "technologies": ["ts.png", "hono.png", "cloudFlare.png"],
       "links": {
         "repository": "https://github.com/AxlGuillen/practica1",
@@ -21,20 +25,24 @@
       }
     },
     {
+      "id": 2,
       "cover": "@/assets/projects/nextik.png",
       "title": "PWA",
       "description": "En este proyecto participé en la conversión de una página web existente a una Progressive Web App (PWA). La página original permitía generar un enlace para enviar mensajes a través de WhatsApp a un número no registrado en la lista de contactos del usuario, evitando así la necesidad de agregar el número a los contactos. Al convertir la página en una PWA, los usuarios pueden instalar la web en sus dispositivos, ya sea un teléfono Android o iOS, o en una computadora, emulando el comportamiento de una aplicación nativa. Las ventajas de esta conversión incluyen el funcionamiento offline, la actualización automática cuando hay modificaciones en la página, y una mayor accesibilidad para el usuario.",
-      "technologies": ["vue.png", "js.png"],
+      "shortDescription": "Conversión de web a PWA para enviar mensajes por WhatsApp sin agregar contactos.",
+      "technologies": ["vue.png", "js.png", "vite.png"],
       "links": {
         "repository": "https://github.com/ZeroTrace/whatsapp-message",
         "demo": "https://mensajes.nextik.mx/"
       }
     },
     {
+      "id": 2,
       "cover": "@/assets/projects/blackjack.png",
       "title": "Blackjack",
       "description": "Este proyecto, desarrollado exclusivamente con JavaScript, es un juego de blackjack diseñado para varios jugadores donde la computadora siempre busca ganar, siguiendo todas las reglas tradicionales del juego. Tecnológicamente, el proyecto fue creado para probar Vite y GitHub Pages. Esta configuración permite construir el proyecto y, al hacer un commit en GitHub, se actualiza automáticamente en el despliegue, facilitando un flujo de trabajo eficiente y continuo.",
-      "technologies": ["js.png"],
+      "shortDescription": "Juego de blackjack con JavaScript, probado con Vite y desplegado en GitHub Pages.",
+      "technologies": ["html-5.png, css.png , js.png, vite.png"],
       "links": {
         "repository": "https://github.com/AxlGuillen/blackjack-vite",
         "demo": "https://axlguillen.github.io/blackjack-vite/"
