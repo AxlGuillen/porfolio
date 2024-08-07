@@ -17,11 +17,11 @@
         <p class="text-xs lg:text-sm text-pretty px-7">{{ shortDescription }}</p>
       </div>
       <div class="flex flex-row justify-around">
-        <a :href="links.demo" target="_blank">
+        <a :href="links.demo" target="_blank" @click.stop>
           <button type="button" class="w-28 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Demo</button>
         </a>
-        <a :href="links.repository" target="_blank">
-          <button type="button" class="w-28 text-white border border-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-500 font-medium rounded-lg text-sm md:px-5 md:py-2.5 text-center me-2 mb-2">Repositorio</button>
+        <a :href="links.repository" target="_blank" @click.stop>
+          <button type="button" class="w-28 text-white border border-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Repositorio</button>
         </a>
       </div>
     </div>
