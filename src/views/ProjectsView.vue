@@ -1,6 +1,9 @@
 <script setup>
 import Card from '../components/projects/card.vue';
 import Title from "../components/shared/TitleComponent.vue";
+import data from "../data/projects.json"
+
+const projects = data.projects
 
 </script>
 
@@ -12,14 +15,16 @@ import Title from "../components/shared/TitleComponent.vue";
       <Title title="Projects"/>
 
       <div class="flex flex-wrap gap-y-5 justify-between">
-        <card class="w-full md:w-[49%]  2xl:w-[32%]" />
-        <card class="w-full md:w-[49%] 2xl:w-[32%]" />
-        <card class="w-full md:w-[49%] 2xl:w-[32%]" />
-        <card class="w-full md:w-[49%] 2xl:w-[32%]" />
-        <card class="w-full md:w-[49%] 2xl:w-[32%]" />
-        <card class="w-full md:w-[49%] 2xl:w-[32%]" />
-
-        
+        <Card 
+          v-for="project in projects" 
+          :key="project.id" 
+          :cover="project.cover" 
+          :title="project.title" 
+          :technologies="project.technologies" 
+          :shortDescription="project.shortDescription" 
+          :links="project.links" 
+          class="w-full md:w-[49%] 2xl:w-[32%]" 
+        />
       </div>
     </div>
     
