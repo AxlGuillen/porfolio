@@ -9,7 +9,7 @@ import Title from "../components/shared/TitleComponent.vue";
     class="flex flex-col gap-5 p-3 md:p-5 lg:p-10 mx-auto justify-center lg:max-w-4xl  2xl:max-w-6xl animate-fade-right animate-ease-linear"
   >
     <div class=" bg-black">
-      <Title class="t" title="Projects"/>
+      <Title title="Projects"/>
 
       <div class="flex flex-wrap gap-y-5 justify-between">
         <card class="w-full md:w-[49%]  2xl:w-[32%]" />
