@@ -1,14 +1,18 @@
 import { createRouter, createWebHistory } from "vue-router";
-import { useUserStore } from "@/stores/userStore";
-import { storeToRefs } from "pinia";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: "",
+      path: "/",
       name: "main",
-      component: () => import("../App.vue"),
+      component: () => import("../views/HomeView.vue"),
+    },
+    {
+      path: "/details/:id",
+      name: "details",
+      component: () => import("../views/DetailsView.vue"),
+      props: true,
     },
     /* {
       path: "/:pathMatch(.*)*",

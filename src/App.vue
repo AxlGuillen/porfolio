@@ -1,12 +1,11 @@
 <script setup>
-import MainSectionVue from "./views/MainView.vue";
-import ProjectsView from "./views/ProjectsView.vue";
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <MainSectionVue />
-  <ProjectsView />
+  <RouterView />
 </template>
 
 <style scoped>
 </style>
+

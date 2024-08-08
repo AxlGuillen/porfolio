@@ -3,6 +3,9 @@ import { createI18n } from "vue-i18n";
 import "./style.css";
 import App from "./App.vue";
 
+// router
+import router from "./router";
+
 // marquee
 import Vue3Marquee from "vue3-marquee";
 
@@ -27,6 +30,7 @@ loadLocaleMessages().then((messages) => {
   });
 
   const app = createApp(App);
+  app.use(router);
   app.use(i18n);
   app.use(Vue3Marquee);
   app.mount("#app");
