@@ -9,5 +9,13 @@
     "projects": "Projects",
     "cv": "Download CV",
     "skills": "Technologies"
+  },
+  "projects": {
+    "title": "Projects",
+    "card": {
+      "info": "More information",
+      "demo": "Demo",
+      "repository": "Repository"
+    }
   }
 }
