@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 0,
-      "cover": "noaai.png",
+      "cover": "noaai.webp",
       "title": "Noa.ai",
       "description": [
         "Noa.ai is an advanced chatbot powered by the ChatGPT API, designed to offer companionship and emotional support to people who feel lonely or have no one to talk to. Thanks to artificial intelligence, Noa.ai helps users reflect on and understand their problems in a different way, acting as a trusted friend who is always available to listen and converse.",
@@ -35,7 +35,7 @@
     },
     {
       "id": 2,
-      "cover": "nextik.png",
+      "cover": "nextik.webp",
       "title": "PWA",
       "description": [
         "In this project, I participated in converting an existing website to a Progressive Web App (PWA). The original page allowed generating a link to send messages via WhatsApp to a number not registered in the user's contact list, thus avoiding the need to add the number to contacts. By converting the page into a PWA, users can install the web on their devices, whether an Android or iOS phone, or a computer, emulating the behavior of a native application. The advantages of this conversion include offline functionality, automatic updates when there are changes on the page, and greater accessibility for the user."
@@ -49,7 +49,7 @@
     },
     {
       "id": 3,
-      "cover": "blackjack.png",
+      "cover": "blackjack.webp",
       "title": "Blackjack",
       "description": [
         "This project, developed exclusively with JavaScript, is a multiplayer blackjack game where the computer always aims to win, following all the traditional rules of the game. Technologically, the project was created to test Vite and GitHub Pages. This setup allows building the project, and when committing to GitHub, it is automatically updated in the deployment, facilitating an efficient and continuous workflow."
