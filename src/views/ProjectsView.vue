@@ -12,12 +12,12 @@ const { t } = useI18n();
 
 <template>
   <div
-    class="flex flex-col gap-5 p-3 md:p-5 lg:p-10 mx-auto justify-center lg:max-w-4xl 2xl:max-w-6xl animate-fade-right animate-ease-linear md:animate-delay-[5000ms]"
+    class="flex flex-col gap-5 p-3 md:p-5 lg:p-10 mx-auto justify-center lg:max-w-4xl 2xl:max-w-6xl animate-flip-up animate-once animate-delay-[5000ms]"
   >
     <div class=" bg-black">
       <Title :title="t('projects.title')"/>
 
-      <div class="flex flex-wrap gap-y-5 justify-between">
+      <div class="flex flex-wrap gap-y-5 justify-between animate-flip-up animate-once animate-delay-[5500ms]">
         <Card 
           v-for="project in projects" 
           :key="project.id" 
