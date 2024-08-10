@@ -9,6 +9,10 @@ import router from "./router";
 // marquee
 import Vue3Marquee from "vue3-marquee";
 
+// Swiper
+import { register } from "swiper/element/bundle";
+register();
+
 async function loadLocaleMessages() {
   const context = {
     en: () => import("./locales/en.json"),

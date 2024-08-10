@@ -17,5 +17,8 @@
       "demo": "Demo",
       "repository": "Repository"
     }
+  },
+  "about": {
+    "title": "Certificates"
   }
 }

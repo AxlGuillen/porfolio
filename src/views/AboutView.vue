@@ -1,17 +1,22 @@
 <script setup>
+import Title from "../components/shared/TitleComponent.vue";
+import carrousel from "../components/certificates/carrousel.vue";
+
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+
+
 </script>
 
 <template>
   <div
-    class="template bg-cover bg-no-repeat animate-fade-right animate-ease-linear"
+    class="flex flex-col gap-5 p-3 md:p-5 lg:p-10 mx-auto justify-center lg:max-w-4xl 2xl:max-w-6xl"
   >
-    <h1>Projects</h1>
+    <Title :title="t('about.title')"/>
+
+    <carrousel />
   </div>
 </template>
 
 <style scoped>
-.template {
-  height: 500px;
-  background-image: url("");
-}
 </style>
