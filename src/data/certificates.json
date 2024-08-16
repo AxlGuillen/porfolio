@@ -1,0 +1,34 @@
+{
+  "certificates": [
+    {
+      "name": "Vue.js",
+      "author": "Fernando Hernando",
+      "image": "vue.webp"
+    },
+    {
+      "name": "SOLID Principles and Clean Code",
+      "author": "Fernando Hernando",
+      "image": "SOLID.webp"
+    },
+    {
+      "name": "JavaScript",
+      "author": "Fernando Hernando",
+      "image": "js.webp"
+    },
+    {
+      "name": "TypeScript",
+      "author": "Fernando Hernando",
+      "image": "SOLID.webp"
+    },
+    {
+      "name": "Python",
+      "author": "Federico Garay",
+      "image": "python.webp"
+    },
+    {
+      "name": "Python",
+      "author": "Javier Fernandez",
+      "image": "python2.webp"
+    }
+  ]
+}
