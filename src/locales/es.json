@@ -17,5 +17,10 @@
       "demo": "Demo",
       "repository": "Repositorio"
     }
+  },
+  "about": {
+    "title": "Certificados",
+    "subtitle": "Estudios adicionales",
+    "history": "Durante mis estudios universitarios, me di cuenta de lo vasto que es el mundo del desarrollo. Con las tecnologías en constante evolución y nuevas herramientas surgiendo, vi la necesidad de aprenderlas cuanto antes para poder adaptarme y avanzar en mis proyectos. Así que comencé a tomar cursos adicionales, algunos por curiosidad y otros para prepararme para proyectos en los que quería participar. Estos certificados reflejan la evolución de mi aprendizaje."
   }
 }
