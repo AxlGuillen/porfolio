@@ -61,11 +61,6 @@
         class="w-6 h-6 mx-1"
       />
       <img
-        src="../../assets/iconos/Mysql.png"
-        alt="mysql"
-        class="w-6 h-6 mx-1"
-      />
-      <img
         src="../../assets/iconos/postgreSQL.png"
         alt="postgreSQL"
         class="w-6 h-6 mx-1"
