@@ -3,8 +3,8 @@
     class="flex space-x-4 my-4 animate-flip-up animate-once animate-delay-[3500ms] xl:text-xl"
   >
     <a
-      href="/docs/CV-GUILLEN-AXL.pdf"
-      download="Axl_Guillen_CV.pdf"
+      href="docs/CV-GUILLEN-AXL.pdf"
+      download="CV-GUILLEN-AXL.pdf"
       class="rounded p-1 border-b-4 border-blue-600 hover:bg-blue-600 hover:border-b-0 flex items-center space-x-2"
     >
       <Download class="text-white"/>
