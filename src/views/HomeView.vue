@@ -9,7 +9,7 @@ import AboutView from "./AboutView.vue"
   <Navbar />
   
   <!-- Main Section -->
-  <div id="main-section">
+  <div id="main-section" class="pt-10">
     <MainSectionVue/>
   </div>
   
