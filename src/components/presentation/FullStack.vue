@@ -25,17 +25,22 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const helloElement = ref(null);
 const worldElement = ref(null);
 
 let i = 0,
   j = 0;
 
-onMounted(() => {
+function resetTypewriter() {
+  i = 0;
+  j = 0;
+  helloElement.value.innerHTML = "";
+  worldElement.value.innerHTML = "";
+  
   const helloText = t("presentation.im");
   const worldText = t("presentation.name");
 
@@ -58,6 +63,15 @@ onMounted(() => {
   }
 
   typeWriterHello();
+}
+
+onMounted(() => {
+  resetTypewriter();
+});
+
+// Observa los cambios en el idioma seleccionado para reiniciar la animación de escritura
+watch(locale, () => {
+  resetTypewriter();
 });
 </script>
 
