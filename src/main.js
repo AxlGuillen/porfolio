@@ -28,6 +28,8 @@ async function loadLocaleMessages() {
 
 loadLocaleMessages().then((messages) => {
   const i18n = createI18n({
+    legacy: false,
+    globalInjection: true,
     locale: "en",
     fallbackLocale: "en",
     messages: messages,
