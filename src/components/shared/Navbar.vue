@@ -11,12 +11,7 @@ onMounted(() => {
   const $triggerEl = document.querySelector('[data-collapse-toggle="navbar-language"]');
 
   if ($targetEl && $triggerEl) {
-    const options = {
-      onCollapse: () => console.log('Menu colapsado'),
-      onExpand: () => console.log('Menu expandido'),
-      onToggle: () => console.log('Menu toggled'),
-    };
-
+    const options = {};
     const navbarCollapse = new Collapse($targetEl, $triggerEl, options);
   }
 
@@ -25,10 +20,7 @@ onMounted(() => {
   const dropdownMenuEl = document.getElementById('language-dropdown-menu');
 
   if (dropdownTriggerEl && dropdownMenuEl) {
-    const dropdown = new Dropdown(dropdownMenuEl, dropdownTriggerEl, {
-      onShow: () => console.log('Dropdown visible'),
-      onHide: () => console.log('Dropdown oculto'),
-    });
+    const dropdown = new Dropdown(dropdownMenuEl, dropdownTriggerEl);
   }
 });
 </script>
