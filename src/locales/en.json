@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "mainSection": "Home",
+    "projectsSection": "Projects",
+    "certificatesSection": "Certificates",
+    "contactSection": "Contact"
+  },
   "presentation": {
     "im": "I am",
     "name": " Axl Guillen",
