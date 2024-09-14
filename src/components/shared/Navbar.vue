@@ -87,7 +87,7 @@ const changeLanguage = (lang) => {
             <a href="#about-section" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.certificatesSection') }}</a>
         </li>
         <li>
-            <a href="#" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.contactSection') }}</a>
+            <a href="#contact-section" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.contactSection') }}</a>
         </li>
         </ul>
     </div>
