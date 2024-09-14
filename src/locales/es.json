@@ -31,5 +31,8 @@
   },
   "contact": {
     "title": "Contáctame"
+  },
+  "footer": {
+    "back": "Volver arriba"
   }
 }
