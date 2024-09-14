@@ -3,6 +3,7 @@ import Navbar from '../components/shared/Navbar.vue';
 import MainSectionVue from "./MainView.vue";
 import ProjectsView from "./ProjectsView.vue";
 import AboutView from "./AboutView.vue"
+import ContactView from './ContactView.vue';
 </script>
 
 <template>
@@ -21,6 +22,10 @@ import AboutView from "./AboutView.vue"
   <!-- About Section -->
   <div id="about-section">
     <AboutView />
+  </div>
+
+  <div id="contact-section">
+    <ContactView />
   </div>
 </template>
 
