@@ -4,6 +4,7 @@ import MainSectionVue from "./MainView.vue";
 import ProjectsView from "./ProjectsView.vue";
 import AboutView from "./AboutView.vue"
 import ContactView from './ContactView.vue';
+import Footer from '../components/shared/Footer.vue';
 </script>
 
 <template>
@@ -27,6 +28,9 @@ import ContactView from './ContactView.vue';
   <div id="contact-section">
     <ContactView />
   </div>
+
+  <Footer />
+
 </template>
 
 <style>
