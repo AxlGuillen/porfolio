@@ -43,6 +43,6 @@ const { t } = useI18n();
 
 <style scoped>
 .gradiente{
-    background: linear-gradient(to bottom, #000000 30%, #2563eb);
+    background: linear-gradient(to bottom, #000000, #1c63f264);
 }
 </style>
