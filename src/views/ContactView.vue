@@ -15,11 +15,11 @@ const { t } = useI18n();
   >
     <Title :title="t('contact.title')" />
 
-    <div class="flex flex-row justify-around">
-      <div>
+    <div class="flex flex-col justify-around md:flex-row">
+      <div class="w-1/2">
         <h2>{{t( 'contact.subtitle' )}}</h2>
       </div>
-      <div>
+      <div class="w-1/2">
         <ContactForm />
       </div>
     </div>
