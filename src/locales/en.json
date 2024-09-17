@@ -31,7 +31,11 @@
   },
   "contact": {
     "title": "Contact me",
-    "subtitle": "Let's work together"
+    "subtitle": "Let's work together",
+    "labelName": "Your Full Name",
+    "labelEmail": "Your Email Address",
+    "titleMessage": "Your Message",
+    "labelMessage": "Example: Hi Axl, would you like to join our team?"
   },
   "footer": {
     "back": "Back to the top"

@@ -31,7 +31,11 @@
   },
   "contact": {
     "title": "Contáctame",
-    "subtitle": "Construyamos juntos un equipo sólido"
+    "subtitle": "Construyamos juntos un equipo sólido",
+    "labelName": "Tu Nombre Completo",
+    "labelEmail": "Tu Dirección de Correo Electrónico",
+    "titleMessage": "Tu Mensaje",
+    "labelMessage": "Ejemplo: Hola Axl, ¿te gustaría unirte a nuestro equipo?"
   },
   "footer": {
     "back": "Volver arriba"
