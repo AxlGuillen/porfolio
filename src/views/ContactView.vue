@@ -15,11 +15,12 @@ const { t } = useI18n();
   >
     <Title :title="t('contact.title')" />
 
-    <div class="flex flex-col justify-around md:flex-row gap-5">
+    <div class="flex flex-col justify-around md:flex-row gap-5 items-center">
       <div class="md:w-1/2">
-        <h2>{{t( 'contact.subtitle' )}}</h2>
+        <h2 class="text-2xl text-center mb-5">{{t( 'contact.subtitle' )}}</h2>  
+        <img src="../assets/developer-team.png" alt="Team work">
       </div>
-      <div class="md:w-1/2">
+      <div class="w-full md:w-1/2 p-5 md:p-0">
         <ContactForm />
       </div>
     </div>
