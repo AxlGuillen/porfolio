@@ -78,7 +78,7 @@ const changeLanguage = (lang) => {
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
         <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border- bg-neutral-800 md:bg-neutral-950">
         <li>
-            <a href="#main-section" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 hover:text-blue-500">{{ t('navbar.mainSection') }}</a>
+            <a href="#main-section" class="block py-2 px-3 text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.mainSection') }}</a>
         </li>
         <li>
             <a href="#projects-section" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.projectsSection') }}</a>
