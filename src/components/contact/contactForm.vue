@@ -71,8 +71,8 @@
 
     .card {
     border-radius: 30px;
-    box-shadow: 15px 15px 30px  #1c63f244,
-                -15px -15px 30px #1c63f244;
+    box-shadow: 10px 10px 15px  #1c63f244,
+                -10px -10px 15px #1c63f244;
     }
 
 </style>
