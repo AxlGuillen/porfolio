@@ -15,9 +15,23 @@
         <a :href="links.demo" target="_blank" @click.stop>
           <button type="button" class="w-28 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">{{ t('projects.card.demo') }}</button>
         </a>
-        <a :href="links.repository" target="_blank" @click.stop>
-          <button type="button" class="w-28 text-white border border-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">{{ t('projects.card.repository') }}</button>
-        </a>
+        <!-- Botón del repositorio -->
+        <template v-if="isRepositoryAvailable">
+          <a :href="links.repository" target="_blank" @click.stop>
+            <button type="button" class="w-28 text-white border border-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">
+              {{ t('projects.card.repository') }}
+            </button>
+          </a>
+        </template>
+        <template v-else>
+          <button
+          type="button"
+          class="w-28 text-white border border-blue-600 opacity-50 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+          disabled
+        >
+          {{ t('projects.card.repository') }}
+        </button>
+        </template>
       </div>
     </div>
     <DetailsModal ref="projectModal" :title="title" :description="description"/>
@@ -25,7 +39,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { useI18n } from "vue-i18n";
 import DetailsModal from './detailsModal.vue';
 
@@ -53,4 +67,7 @@ const getImageSrc = (tecnologie) => {
 const getCoverSrc = (cover) => {
   return new URL(`../../assets/projects/${cover}`, import.meta.url).href;
 };
+
+// Propiedad computada para verificar si el repositorio está disponible
+const isRepositoryAvailable = computed(() => props.links.repository && props.links.repository !== '');
 </script>
