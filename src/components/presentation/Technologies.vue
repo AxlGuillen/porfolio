@@ -35,6 +35,11 @@
         class="w-6 h-6 mx-1"
       />
       <img
+        src="../../assets/iconos/livewire.png"
+        alt="Livewire"
+        class="w-6 h-6 mx-1"
+      />
+      <img
         src="../../assets/iconos/hono.png"
         alt="Hono"
         class="w-5 mx-1"
