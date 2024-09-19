@@ -27,7 +27,7 @@ const getShortDescription = (project) => project.shortDescription[currentLanguag
 
     <div class="flex flex-wrap gap-y-5 justify-between animate-flip-up animate-once animate-delay-[5500ms]">
       <Card 
-        v-for="project in data.projects.reverse()" 
+        v-for="project in data.projects" 
         :key="project.id" 
         :cover="project.cover" 
         :title="project.title" 

@@ -1,7 +1,61 @@
 {
   "projects": [
     {
-      "id": 0,
+      "id": 6,
+      "cover": "pos.webp",
+      "title": "THS POS",
+      "description": {
+        "en": [
+          "In this project, I was responsible for developing the front-end of a point-of-sale system for a toy store. The web system allows managing the different sessions of the cashiers, facilitating the control of their daily activities.",
+          "The sales flow in the platform includes first searching and selecting the product, then adding it to the sale, managing the payment method, registering the transaction, and finally generating the sales receipt.",
+          "This project allowed me to learn and apply conventional commit structures to improve documentation and change control. Additionally, it was my first major project using TypeScript, which presented a significant challenge and an excellent growth opportunity. Working as a team was optimized by using tools like Notion, which facilitated organization and sped up development."
+        ],
+        "es": [
+          "En este proyecto fui responsable de desarrollar el front-end de un sistema de punto de venta para una juguetería. El sistema web permite gestionar las distintas sesiones de los cajeros, facilitando el control de las actividades diarias de cada uno.",
+          "El flujo de una venta en la plataforma incluye primero la búsqueda y selección del producto, luego se añade a la venta, se gestiona el método de pago, se registra la transacción y finalmente se genera el ticket de la venta.",
+          "Este proyecto me permitió aprender y aplicar la estructura de commits convencionales para mejorar la documentación y el control de cambios. Además, fue mi primer gran proyecto utilizando TypeScript, lo que representó un reto significativo y una excelente oportunidad de crecimiento. El trabajo en equipo se vio optimizado gracias al uso de herramientas como Notion, lo que facilitó la organización y agilizó el desarrollo."
+        ]
+      },
+      "shortDescription": {
+        "en": "Front-end development of a point-of-sale system for a toy store.",
+        "es": "Desarrollo del front-end de un sistema de punto de venta para una juguetería"
+      },
+      "technologies": ["vue.png", "ts.png", "vite.png"],
+      "links": {
+        "repository": "",
+        "demo": "https://ths-pos-vue.pages.dev/login"
+      }
+    },
+    {
+      "id": 4,
+      "cover": "sim.webp",
+      "title": "ITM-SIM",
+      "description": {
+        "en": [
+          "I participated in this project to fulfill the social service requirement at my university, developing modules in the Integral Modular System of the school together with a team of colleagues. The modules we worked on were the Periods module and the Human Resources module.",
+          "In the Periods module, our team was responsible for managing everything related to the periods of the academic cycles and the types of periods that can exist depending on their duration and season. This module is essential for academic planning and ensures that the institution can efficiently manage its educational calendars.",
+          "On the other hand, in the Human Resources module, we collaborated in managing everything related to the workers, the positions in the school, the existing vacancies, and their assignment. Additionally, we developed the functionality for generating credentials for the members of the institution.",
+          "The development of these modules was a joint effort carried out as a team with other colleagues and under the supervision of a professor who was in charge of distributing and approving the work. This collaborative experience allowed us to learn from each other and contribute significantly to the project."
+        ],
+        "es": [
+          "Participé en este proyecto para liberar el servicio social en mi universidad, desarrollando módulos en el Sistema Integral Modular de la escuela junto con un equipo de compañeros. Los módulos en los que trabajamos fueron el módulo de Periodos y el módulo de Recursos Humanos.",
+          "En el módulo de Periodos, nuestro equipo se encargó de gestionar todo lo relacionado con los periodos de los ciclos escolares y los tipos de periodos que pueden existir dependiendo de su duración y temporada. Este módulo es esencial para la planificación académica y garantiza que la institución pueda manejar eficientemente sus calendarios educativos.",
+          "Por otro lado, en el módulo de Recursos Humanos, colaboramos en la gestión de todo lo relacionado con los trabajadores, los puestos de la escuela, las plazas existentes y su asignación. Además, desarrollamos la funcionalidad para la generación de credenciales para los miembros de la institución.",
+          "El desarrollo de estos módulos fue un esfuerzo conjunto realizado en equipo con otros compañeros y bajo la supervisión de un profesor que se encargaba de distribuir y aprobar el trabajo. Esta experiencia de colaboración nos permitió aprender mutuamente y contribuir de manera significativa al proyecto."
+        ]
+      },
+      "shortDescription": {
+        "en": "I participated in the development of the Periods and HR modules in my university's SIM.",
+        "es": "Participé en el desarrollo de los módulos de Periodos y RH en el SIM de mi universidad."
+      },
+      "technologies": ["laravel.png", "livewire.png", "postgreSQL.png"],
+      "links": {
+        "repository": "",
+        "demo": "http://sim.morelia.tecnm.mx/login"
+      }
+    },
+    {
+      "id": 3,
       "cover": "noaai.webp",
       "title": "Noa.ai",
       "description": {
@@ -20,14 +74,14 @@
         "en": "Advanced chatbot with ChatGPT and Firebase, integrates Speech to Text and Text to Speech.",
         "es": "Chatbot avanzado con ChatGPT y Firebase, integra Speech to Text y Text to Speech."
       },
-      "technologies": ["vue.png", "firebase.png", "js.png"],
+      "technologies": ["vue.png", "js.png", "firebase.png"],
       "links": {
         "repository": "https://github.com/AxlGuillen/noa.ai",
         "demo": "https://noa1-f2c78.web.app/"
       }
     },
     {
-      "id": 1,
+      "id": 2,
       "cover": "api.webp",
       "title": "API",
       "description": {
@@ -48,14 +102,14 @@
         "en": "Backend API with TypeScript, Turso, Hono, and Cloudflare, documented in Hoppscotch.",
         "es": "API backend con TypeScript, Turso, Hono y Cloudflare, documentado en Hoppscotch."
       },
-      "technologies": ["ts.png", "hono.png", "cloudFlare.png"],
+      "technologies": ["hono.png", "ts.png", "cloudFlare.png"],
       "links": {
         "repository": "https://github.com/AxlGuillen/practica1",
         "demo": "https://practica1.axl13-dev.workers.dev/"
       }
     },
     {
-      "id": 2,
+      "id": 1,
       "cover": "nextik.webp",
       "title": "PWA",
       "description": {
@@ -77,7 +131,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 0,
       "cover": "blackjack.webp",
       "title": "Blackjack",
       "description": {
