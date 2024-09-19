@@ -5,7 +5,7 @@
       <div class="flex justify-between items-center px-7">
         <h1 class="text-3xl lg:text-4xl text-nowrap text-center font-extrabold leading-none tracking-tight text-blue-600">{{ title }}</h1>
         <div class="flex justify-center mt-2 gap-x-1 md:mt-0 md:justify-end">
-          <img class="w-8 md:w-10 p-1.5 rounded-xl bg-blue-950" v-for="tecnologie in technologies" :src="getImageSrc(tecnologie)" :alt="tecnologie" :key="tecnologie">
+          <img class="w-8 h-8 md:w-10 md:h-10 p-1.5 rounded-xl bg-blue-950" v-for="tecnologie in technologies" :src="getImageSrc(tecnologie)" :alt="tecnologie" :key="tecnologie">
         </div>
       </div>
       <div class="mx-auto flex flex-nowrap">
