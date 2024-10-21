@@ -90,7 +90,7 @@ defineExpose({
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
         <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border- bg-neutral-800 md:bg-neutral-950">
         <li>
-            <a href="#main-section" :class="{ active: activeLink === 'main-section' }" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.mainSection') }}</a>
+            <a href="#main-section" :class="{ active: activeLink === 'main-section' }" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-600 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.mainSection') }}</a>
         </li>
         <li>
             <a href="#projects-section" :class="{ active: activeLink === 'projects-section' }"  class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.projectsSection') }}</a>
@@ -133,8 +133,16 @@ a:focus::after {
   transform: scaleX(1);
 }
 
+a[href="#main-section"]:hover::after,
+a[href="#projects-section"]:hover::after,
+a[href="#about-section"]:hover::after,
+a[href="#contact-section"]:hover::after {
+  visibility: hidden;
+  transform: scaleX(0);
+}
+
 .active {
-  color: blue; /* Cambia el color del texto del enlace activo */
+  color: rgb(28 100 242); /* Cambia el color del texto del enlace activo */
   font-weight: bold; /* Opcional: hacer el texto en negrita */
 }
 
