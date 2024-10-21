@@ -40,8 +40,14 @@ const changeLanguage = (lang) => {
 const activeLink = ref(null);
 
 const setActiveLink = (link) => {
+  console.log(link);
+  
   activeLink.value = link;
 };
+
+defineExpose({
+  setActiveLink, // Exponemos la función para que el componente padre pueda accederla
+});
 </script>
 
 <template>
@@ -84,16 +90,16 @@ const setActiveLink = (link) => {
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
         <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border- bg-neutral-800 md:bg-neutral-950">
         <li>
-            <a href="#main-section" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.mainSection') }}</a>
+            <a href="#main-section" :class="{ active: activeLink === 'main-section' }" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.mainSection') }}</a>
         </li>
         <li>
-            <a href="#projects-section"  class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.projectsSection') }}</a>
+            <a href="#projects-section" :class="{ active: activeLink === 'projects-section' }"  class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.projectsSection') }}</a>
         </li>
         <li>
-            <a href="#about-section" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.certificatesSection') }}</a>
+            <a href="#about-section" :class="{ active: activeLink === 'about-section' }" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.certificatesSection') }}</a>
         </li>
         <li>
-            <a href="#contact-section"  class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.contactSection') }}</a>
+            <a href="#contact-section" :class="{ active: activeLink === 'contact-section' }"  class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.contactSection') }}</a>
         </li>
         </ul>
     </div>
@@ -123,6 +129,16 @@ a::after {
 
 a:hover::after,
 a:focus::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.active {
+  color: blue; /* Cambia el color del texto del enlace activo */
+  font-weight: bold; /* Opcional: hacer el texto en negrita */
+}
+
+.active::after {
   visibility: visible;
   transform: scaleX(1);
 }
