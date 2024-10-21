@@ -81,30 +81,31 @@ import Technologies from "../components/presentation/Technologies.vue";
 
 @keyframes borderRainbow {
   0% {
-    border-image-source: linear-gradient(90deg, red, orange, yellow);
+    border-image-source: linear-gradient(90deg, #9003D1, #7610E1, #621BEC);
   }
   14.29% {
-    border-image-source: linear-gradient(90deg, orange, yellow, green);
+    border-image-source: linear-gradient(90deg, #7610E1, #621BEC, #4435F9);
   }
   28.57% {
-    border-image-source: linear-gradient(90deg, yellow, green, blue);
+    border-image-source: linear-gradient(90deg, #621BEC, #4435F9, #286CE9);
   }
   42.86% {
-    border-image-source: linear-gradient(90deg, green, blue, indigo);
+    border-image-source: linear-gradient(90deg, #4435F9, #286CE9, #119ADE);
   }
   57.14% {
-    border-image-source: linear-gradient(90deg, blue, indigo, violet);
+    border-image-source: linear-gradient(90deg, #286CE9, #119ADE, #07B3D7);
   }
   71.43% {
-    border-image-source: linear-gradient(90deg, indigo, violet, red);
+    border-image-source: linear-gradient(90deg, #119ADE, #07B3D7, #9003D1);
   }
   85.71% {
-    border-image-source: linear-gradient(90deg, violet, red, orange);
+    border-image-source: linear-gradient(90deg, #07B3D7, #9003D1, #7610E1);
   }
   100% {
-    border-image-source: linear-gradient(90deg, red, orange, yellow);
+    border-image-source: linear-gradient(90deg, #9003D1, #7610E1, #621BEC);
   }
 }
+
 
 .animate-borderRainbow {
   border-bottom-width: 4px;
