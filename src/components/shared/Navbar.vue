@@ -36,6 +36,12 @@ const currentLanguageLabel = computed(() => {
 const changeLanguage = (lang) => {
   locale.value = lang; // Cambia el idioma
 };
+
+const activeLink = ref(null);
+
+const setActiveLink = (link) => {
+  activeLink.value = link;
+};
 </script>
 
 <template>
@@ -81,13 +87,13 @@ const changeLanguage = (lang) => {
             <a href="#main-section" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.mainSection') }}</a>
         </li>
         <li>
-            <a href="#projects-section" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.projectsSection') }}</a>
+            <a href="#projects-section"  class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.projectsSection') }}</a>
         </li>
         <li>
             <a href="#about-section" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.certificatesSection') }}</a>
         </li>
         <li>
-            <a href="#contact-section" class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.contactSection') }}</a>
+            <a href="#contact-section"  class="block py-2 px-3 md:p-0 rounded text-white md:hover:text-blue-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-gray-700">{{ t('navbar.contactSection') }}</a>
         </li>
         </ul>
     </div>
@@ -96,5 +102,28 @@ const changeLanguage = (lang) => {
 </template>
 
 <style scoped>
+a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
 
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor; /* La línea será del mismo color que el texto */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::after,
+a:focus::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
 </style>
