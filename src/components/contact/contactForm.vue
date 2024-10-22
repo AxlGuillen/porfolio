@@ -29,7 +29,7 @@
     const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-    
+
     // Inicializa EmailJS con tu Public Key
     emailjs.init(publicKey);
 
@@ -62,6 +62,9 @@
             emailjs.send(serviceID, templateID, templateParams)
             .then(() => {
                 alert('¡Correo enviado exitosamente!');
+                name.value = '';
+                email.value = '';
+                message.value = '';
             }, (err) => {
                 alert('Error al enviar el correo:\n' + JSON.stringify(err));
             });
