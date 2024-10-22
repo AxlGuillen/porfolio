@@ -40,8 +40,6 @@ const changeLanguage = (lang) => {
 const activeLink = ref(null);
 
 const setActiveLink = (link) => {
-  console.log(link);
-  
   activeLink.value = link;
 };
 

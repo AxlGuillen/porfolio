@@ -10,7 +10,7 @@ import { ref, onMounted, nextTick } from 'vue';
 const navbarRef = ref(null);
 
 onMounted(async () => {
-  await nextTick(); // Espera a que el DOM esté completamente listo
+  await nextTick();
 
   const sections = document.querySelectorAll('#main-section, #projects-section, #about-section, #contact-section');
 
@@ -20,8 +20,7 @@ onMounted(async () => {
     (entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          //console.log(`Estás en la sección: ${entry.target.id}`);
-          navbarRef.value.setActiveLink(entry.target.id); // Accede a la función setActiveLink del navbarRef
+          navbarRef.value.setActiveLink(entry.target.id);
         }
       });
     },
