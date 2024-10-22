@@ -20,12 +20,18 @@
 </template>
 
 <script setup>
-    import { ref } from 'vue';
+    import { ref, onMounted } from 'vue';
     import { useI18n } from "vue-i18n";
     import emailjs from '@emailjs/browser';
+    import axios from 'axios';
 
+    const apiKey = import.meta.env.VITE_ABSTRACT_API_KEY;
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    
     // Inicializa EmailJS con tu Public Key
-    emailjs.init('OaiN3mSDbR8mvzrZE');
+    emailjs.init(publicKey);
 
     const { t } = useI18n();
 
@@ -33,22 +39,37 @@
     const email = ref('');
     const message = ref('');
 
-    const sendEmail = () => {
-    const serviceID = 'service_vh78oep';
-    const templateID = 'template_2fd1ryv';
+    const sendEmail = async () => {
+        try {
+            
+            const response = await axios.get(
+                `https://emailvalidation.abstractapi.com/v1/?api_key=${apiKey}&email=${email.value}`
+            );
 
-    const templateParams = {
-        name: name.value,
-        email: email.value,
-        message: message.value,
-    };
+            const { is_valid_format, deliverability } = response.data;
 
-    emailjs.send(serviceID, templateID, templateParams)
-        .then(() => {
-        alert('¡Correo enviado exitosamente!');
-        }, (err) => {
-        alert('Error al enviar el correo:\n' + JSON.stringify(err));
-        });
+            if (!is_valid_format.value || deliverability !== 'DELIVERABLE') {
+                alert('El correo no es válido o no existe.');
+                return;
+            }
+
+            const templateParams = {
+                name: name.value,
+                email: email.value,
+                message: message.value,
+            };
+
+            emailjs.send(serviceID, templateID, templateParams)
+            .then(() => {
+                alert('¡Correo enviado exitosamente!');
+            }, (err) => {
+                alert('Error al enviar el correo:\n' + JSON.stringify(err));
+            });
+
+        } catch (error) {
+            console.error('Error durante la validación o el envío del correo:', error);
+            alert('Ocurrió un error durante la validación del correo.');
+        }
     };
 </script>
 
