@@ -44,12 +44,12 @@ const setActiveLink = (link) => {
 };
 
 defineExpose({
-  setActiveLink, // Exponemos la función para que el componente padre pueda accederla
+  setActiveLink,
 });
 </script>
 
 <template>
-    <nav class="bg-neutral-950 fixed w-full z-20 top-0 start-0 animate-flip-down animate-once animate-delay-[5000ms]">
+    <nav class="bg-neutral-950 fixed w-full z-20 top-0 start-0">
     <div class="2xl:max-w-[1120px] lg:max-w-[860px] h-12 md:h-16 flex flex-wrap items-center justify-end md:justify-between mx-auto py-1 px-1 md:p-4 gap-x-5">
     <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
         <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-white rounded-lg cursor-pointer hover:bg-neutral-700">

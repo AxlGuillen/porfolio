@@ -38,6 +38,7 @@
     "labelMessage": "Example: Hi Axl, would you like to join our team?"
   },
   "footer": {
-    "back": "Back to the top"
+    "back": "Back to the top",
+    "madeWithLove": "Made with ❤️ by Axl Guillen"
   }
 }

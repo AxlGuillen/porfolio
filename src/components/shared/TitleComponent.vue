@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" data-aos="zoom-in">
     <svg>
       <text x="50%" y="50%" dy=".35em" text-anchor="middle">
         {{ title }}
@@ -9,12 +9,21 @@
 </template>
 
 <script setup>
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { onMounted } from 'vue';
 
 defineProps({
   title: {
     type: String,
     required: true,
   },
+});
+
+onMounted(() => {
+  AOS.init({
+    duration: 1000,
+  });
 });
 </script>
 
