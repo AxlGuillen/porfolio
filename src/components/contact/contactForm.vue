@@ -14,6 +14,8 @@
             <textarea v-model="message" id="message" rows="4" class="block p-2.5 w-full text-sm rounded-lg borde focus:border-blue-600 bg-neutral-900 border-neutral-600 placeholder-neutral-400 text-white " :placeholder="t('contact.labelMessage')" required></textarea>
         </div>
 
+        <div class="cf-turnstile mb-5" data-sitekey="0x4AAAAAAAyIl64MYWrxIkGJ" data-size="flexible"></div>
+
         <button type="submit" class="w-full button">Enviar</button>
 
     </form>
@@ -24,6 +26,15 @@
     import { useI18n } from "vue-i18n";
     import emailjs from '@emailjs/browser';
     import axios from 'axios';
+
+    onMounted(() => {
+    if (window.turnstile) {
+        // Si Turnstile ya está cargado, inicializa los widgets manualmente
+        window.turnstile.render('.cf-turnstile', {
+        sitekey: '0x4AAAAAAAyIl64MYWrxIkGJ',
+        });
+    }
+    });
 
     const apiKey = import.meta.env.VITE_ABSTRACT_API_KEY;
     const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -41,6 +52,26 @@
 
     const sendEmail = async () => {
         try {
+            // Captura el token de Turnstile
+            const turnstileResponse = document.querySelector('[name="cf-turnstile-response"]').value;
+
+            if (!turnstileResponse) {
+            alert('Por favor completa el CAPTCHA.');
+            return;
+            }
+
+            const verifyResponse = await axios.post('https://porfolioturnstile.axl13-dev.workers.dev/', {
+                token: turnstileResponse,
+            }, {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            if (!verifyResponse.data.success) {
+                alert('Falló la verificación del CAPTCHA.');
+                return;
+            }
             
             const response = await axios.get(
                 `https://emailvalidation.abstractapi.com/v1/?api_key=${apiKey}&email=${email.value}`
@@ -57,6 +88,7 @@
                 name: name.value,
                 email: email.value,
                 message: message.value,
+                'g-recaptcha-response': turnstileResponse
             };
 
             emailjs.send(serviceID, templateID, templateParams)
