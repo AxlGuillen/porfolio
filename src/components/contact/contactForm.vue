@@ -14,7 +14,7 @@
             <textarea v-model="message" id="message" rows="4" class="block p-2.5 w-full text-sm rounded-lg borde focus:border-blue-600 bg-neutral-900 border-neutral-600 placeholder-neutral-400 text-white " :placeholder="t('contact.labelMessage')" required></textarea>
         </div>
 
-        <div class="cf-turnstile mb-5" data-sitekey="0x4AAAAAAAyIl64MYWrxIkGJ" data-size="flexible"></div>
+        <div class="cf-turnstile mb-5" data-sitekey="0x4AAAAAAAyIl64MYWrxIkGJ" :data-size="widgetSize"></div>
 
         <button type="submit" class="w-full button">Enviar</button>
 
@@ -28,12 +28,17 @@
     import axios from 'axios';
 
     onMounted(() => {
-    if (window.turnstile) {
-        // Si Turnstile ya está cargado, inicializa los widgets manualmente
-        window.turnstile.render('.cf-turnstile', {
-        sitekey: '0x4AAAAAAAyIl64MYWrxIkGJ',
-        });
-    }
+        if (window.turnstile) {
+            window.turnstile.render('.cf-turnstile', {
+            sitekey: '0x4AAAAAAAyIl64MYWrxIkGJ',
+            });
+        }
+        
+        if (window.innerWidth < 600) {
+            widgetSize.value = 'compact';
+        } else {
+            widgetSize.value = 'flexible';
+        }
     });
 
     const apiKey = import.meta.env.VITE_ABSTRACT_API_KEY;
@@ -49,6 +54,7 @@
     const name = ref('');
     const email = ref('');
     const message = ref('');
+    const widgetSize = ref('flexible');
 
     const sendEmail = async () => {
         try {

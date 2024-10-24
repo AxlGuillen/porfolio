@@ -2,10 +2,18 @@
 import ArrowUp from '../../assets/iconos/svg/arrow-up.vue';
 import gitLogo from '../../assets/iconos/svg/github.vue'
 import linkedinLogo from '../../assets/iconos/svg/linkedin.vue'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { onMounted } from 'vue';
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
+
+onMounted(() => {
+  AOS.init({
+    duration: 750,
+  });
+});
 
 </script>
 
@@ -23,7 +31,7 @@ const { t } = useI18n();
         
       <hr class="my-6 sm:mx-auto border-white lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-smsm:text-center">© 2024 All Rights Reserved. <span class="text-xs">Hecho con <3 </span>
+          <span class="text-smsm:text-center">© 2024 All Rights Reserved. <span class="text-xs">{{ t('footer.madeWithLove') }}</span>
           </span>
           <div class="flex mt-4 sm:justify-center sm:mt-0">
               <a href="https://github.com/AxlGuillen" class="hover:text-white" target="_blank">

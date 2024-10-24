@@ -1,27 +1,34 @@
 <script setup>
 import Title from "../components/shared/TitleComponent.vue";
 import carrousel from "../components/certificates/carrousel.vue";
-
 import { useI18n } from "vue-i18n";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { onMounted } from 'vue';
+
 const { t } = useI18n();
 
-
+onMounted(() => {
+  AOS.init({
+    duration: 750,
+  });
+});
 </script>
 
 <template>
   <div class="flex parallax-container gradient-overlay">
-    <div class="parallax-background"></div> <!-- Imagen de fondo para el efecto parallax -->
+    <div class="parallax-background"></div>
     <div
       class="flex flex-col p-3 md:p-5 lg:p-10 mx-auto justify-center lg:max-w-4xl 2xl:max-w-6xl"
     >
       <Title :title="t('about.title')" />
 
       <div class="flex flex-col md:flex-row p-3 md:p-5 lg:p-10 gap-5">
-        <div class="md:mx-0 mx-auto md:w-2/5 xl:w-1/2">
+        <div class="md:mx-0 mx-auto md:w-2/5 xl:w-1/2" data-aos="zoom-in-right">
           <h1 class="text-3xl xl:text-4xl mb-3">{{ t('about.subtitle') }}</h1>
           <p class="text-sm text-balance font-light lg:text-base xl:text-lg">{{ t('about.history') }}</p>
         </div>
-        <carrousel />
+        <carrousel data-aos="zoom-in-left" />
       </div>
     </div>
   </div>
