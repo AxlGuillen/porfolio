@@ -31,9 +31,9 @@ onMounted(() => {
         
       <hr class="my-6 sm:mx-auto border-white lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-smsm:text-center" data-aos="zoom-out-right">© 2024 All Rights Reserved. <span class="text-xs">{{ t('footer.madeWithLove') }}</span>
+          <span class="text-smsm:text-center">© 2024 All Rights Reserved. <span class="text-xs">{{ t('footer.madeWithLove') }}</span>
           </span>
-          <div class="flex mt-4 sm:justify-center sm:mt-0" data-aos="zoom-out-left">
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
               <a href="https://github.com/AxlGuillen" class="hover:text-white" target="_blank">
                   <gitLogo class="hover:text-[#171515]" />
                   <span class="sr-only">Github</span>
