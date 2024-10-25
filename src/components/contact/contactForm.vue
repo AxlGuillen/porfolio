@@ -25,6 +25,9 @@ import { ref, onMounted } from 'vue';
 import { useI18n } from "vue-i18n";
 import emailjs from '@emailjs/browser';
 import axios from 'axios';
+import { useNotificationStore } from '../../stores/notificationStore';
+
+const $notificationStore = useNotificationStore();
 
 onMounted(() => {
     if (window.turnstile) {
@@ -57,15 +60,13 @@ const widgetSize = ref('flexible');
 
 const sendEmail = async () => {
     try {
-        // Captura el token de Turnstile
         const turnstileResponse = document.querySelector('[name="cf-turnstile-response"]').value;
 
         if (!turnstileResponse) {
-            alert('Por favor completa el CAPTCHA.');
+            $notificationStore.showNotification('Por favor completa el CAPTCHA.', 'warning');
             return;
         }
         
-        // Valida el formato del correo
         const response = await axios.get(
             `https://emailvalidation.abstractapi.com/v1/?api_key=${apiKey}&email=${email.value}`
         );
@@ -73,11 +74,10 @@ const sendEmail = async () => {
         const { is_valid_format, deliverability } = response.data;
 
         if (!is_valid_format.value || deliverability !== 'DELIVERABLE') {
-            alert('El correo no es válido o no existe.');
+            $notificationStore.showNotification('El correo no es válido o no existe.', 'error');
             return;
         }
 
-        // Parámetros del template para EmailJS
         const templateParams = {
             name: name.value,
             email: email.value,
@@ -85,20 +85,19 @@ const sendEmail = async () => {
             'g-recaptcha-response': turnstileResponse
         };
 
-        // Envío del correo mediante EmailJS
         emailjs.send(serviceID, templateID, templateParams)
         .then(() => {
-            alert('¡Correo enviado exitosamente!');
+            $notificationStore.showNotification('¡Correo enviado exitosamente!', 'success');
             name.value = '';
             email.value = '';
             message.value = '';
         }, (err) => {
-            alert('Error al enviar el correo:\n' + JSON.stringify(err));
+            $notificationStore.showNotification('Error al enviar el correo:\n' + JSON.stringify(err), 'error');
         });
 
     } catch (error) {
         console.error('Error durante la validación o el envío del correo:', error);
-        alert('Ocurrió un error durante la validación del correo.');
+        $notificationStore.showNotification('Ocurrió un error durante la validación del correo.', 'error');
     }
 };
 </script>
