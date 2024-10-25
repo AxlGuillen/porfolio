@@ -14,7 +14,7 @@
             <textarea v-model="message" id="message" rows="4" class="block p-2.5 w-full text-sm rounded-lg border focus:border-blue-600 bg-neutral-900 border-neutral-600 placeholder-neutral-400 text-white" :placeholder="t('contact.labelMessage')" required></textarea>
         </div>
 
-        <div class="cf-turnstile mb-5" data-sitekey="0x4AAAAAAAyIl64MYWrxIkGJ" :data-size="widgetSize"></div>
+        <div class="cf-turnstile mb-5" data-sitekey="0x4AAAAAAAyIl64MYWrxIkGJ" :data-size="widgetSize" data-theme="dark"></div>
 
         <button type="submit" class="w-full button">Enviar</button>
     </form>
