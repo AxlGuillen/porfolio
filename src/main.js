@@ -13,6 +13,9 @@ import Vue3Marquee from "vue3-marquee";
 import { register } from "swiper/element/bundle";
 register();
 
+// Pinia
+import { createPinia } from "pinia";
+
 async function loadLocaleMessages() {
   const context = {
     en: () => import("./locales/en.json"),
@@ -36,8 +39,11 @@ loadLocaleMessages().then((messages) => {
   });
 
   const app = createApp(App);
+  const pinia = createPinia();
+
   app.use(router);
   app.use(i18n);
   app.use(Vue3Marquee);
+  app.use(pinia);
   app.mount("#app");
 });
