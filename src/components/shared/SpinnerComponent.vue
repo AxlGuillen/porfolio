@@ -23,7 +23,7 @@ const props = defineProps({
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.8);
+  background: #061532ac;
   z-index: 9999;
 }
 
