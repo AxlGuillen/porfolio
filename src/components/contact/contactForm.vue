@@ -18,6 +18,7 @@
 
         <button type="submit" class="w-full button">Enviar</button>
     </form>
+    <SpinnerComponent :show="isLoading"/>
 </template>
 
 <script setup>
@@ -26,6 +27,7 @@ import { useI18n } from "vue-i18n";
 import emailjs from '@emailjs/browser';
 import axios from 'axios';
 import { useNotificationStore } from '../../stores/notificationStore';
+import SpinnerComponent from '../shared/SpinnerComponent.vue';
 
 const $notificationStore = useNotificationStore();
 
@@ -57,8 +59,11 @@ const name = ref('');
 const email = ref('');
 const message = ref('');
 const widgetSize = ref('flexible');
+const isLoading = ref(false);
+
 
 const sendEmail = async () => {
+    isLoading.value = true;
     try {
         const turnstileResponse = document.querySelector('[name="cf-turnstile-response"]').value;
 
@@ -98,6 +103,8 @@ const sendEmail = async () => {
     } catch (error) {
         console.error('Error durante la validación o el envío del correo:', error);
         $notificationStore.showNotification('Ocurrió un error durante la validación del correo.', 'error');
+    } finally {
+        isLoading.value = false;
     }
 };
 </script>
