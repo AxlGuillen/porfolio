@@ -30,6 +30,7 @@ onMounted(() => {
 <template>
   <div
     class="flex flex-col gap-5 p-3 md:p-5 lg:p-10 mx-auto justify-center lg:max-w-4xl 2xl:max-w-6xl"
+    data-aos="zoom-in-down"
   >
     <Title :title="t('projects.title')" />
 
@@ -44,7 +45,6 @@ onMounted(() => {
         :shortDescription="getShortDescription(project)"
         :links="project.links"
         class="w-full md:w-[49%] 2xl:w-[32%] hover:bg-slate-950"
-            data-aos="zoom-in-down"
       />
     </div>
   </div>
