@@ -16,11 +16,16 @@
         class="relative md:basis-1/2 lg:basis-1/3 xl:basis-1/4 animate-jump-in animate-once animate-ease-out animate-delay-[4500ms]"
       >
         <div
-          class="absolute inset-0 border-4 animate-borderRainbow transform translate-x-2 translate-y-2"
+          class="md:mx-auto md:max-w-64 md:h-96 absolute inset-0 border-4 animate-borderRainbow transform translate-x-2 translate-y-2"
         ></div>
         <img
-          class="relative z-10"
+          class="relative z-10 md:hidden"
           src="/src/assets/Axl.webp"
+          alt="Foto de Axl Guillen"
+        />
+        <img
+          class="relative hidden md:block md:mx-auto md:max-w-64 md:h-96 z-10"
+          src="/src/assets/yo2.webp"
           alt="Foto de Axl Guillen"
         />
       </div>
