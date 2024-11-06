@@ -20,7 +20,7 @@
         ></div>
         <img
           class="relative z-10"
-          src="/src/assets/yo.jpg"
+          src="/src/assets/Axl.webp"
           alt="Foto de Axl Guillen"
         />
       </div>
