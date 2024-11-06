@@ -1,6 +1,6 @@
 <template>
   <div class="w-96 h-96 rounded-xl bg-transparent shadow-sm shadow-blue-600 flex flex-col ">
-    <img class="w-full min-h-40 object-fill rounded-xl" :src="getCoverSrc(cover)" alt="Project">
+    <img class="w-full h-40 object-cover rounded-xl" :src="getCoverSrc(cover)" alt="Project">
     <div class="flex flex-col h-screen justify-around">
       <div class="flex justify-between items-center px-7">
         <h1 class="text-3xl lg:text-4xl text-nowrap text-center font-extrabold leading-none tracking-tight text-blue-600">{{ title }}</h1>
